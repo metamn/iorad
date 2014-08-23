@@ -1,5 +1,5 @@
 // Typefaces
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 
 
@@ -19,7 +19,7 @@ $heading-level-8: 6.8462em;
 
 @mixin font($type: body) {
   @if ($type == body) {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
   
   } @elseif ($type == title) {
