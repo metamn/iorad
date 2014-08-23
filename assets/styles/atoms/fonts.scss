@@ -1,5 +1,5 @@
 // Typefaces
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
 
 
 
@@ -23,7 +23,8 @@ $heading-level-8: 6.8462em;
     font-weight: 300;
   
   } @elseif ($type == title) {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: $heading-level-4;
   }
 }

@@ -1,0 +1,25 @@
+html.pricing {
+  body {
+    #pricing {
+      #title {
+        @include title;
+      }
+      
+      #all-plans {
+        display: none;
+      }
+      
+      #primary-plans {
+        display: none;
+      }
+      
+      #secondary-plans {
+        display: none;
+      }
+    }
+    
+    #faq {
+      display: none;
+    }
+  }
+}

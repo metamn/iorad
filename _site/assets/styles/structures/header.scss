@@ -1,0 +1,6 @@
+@mixin header {
+  @include center($text-width);
+  
+  height: $gutter * 2;
+  @include colors(white-on-lightblue);
+}
