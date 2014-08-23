@@ -1,0 +1,14 @@
+@mixin all-plans {
+  @include center($text-width);
+  
+  .container {
+    p {
+      @include font(box-title);
+    }
+    
+    ul {
+      margin-top: $gutter;
+      @include list-underlined;
+    }
+  }
+}

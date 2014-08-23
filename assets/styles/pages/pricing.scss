@@ -6,7 +6,7 @@ html.pricing {
       }
       
       #all-plans {
-        display: none;
+        @include all-plans;
       }
       
       #primary-plans {
