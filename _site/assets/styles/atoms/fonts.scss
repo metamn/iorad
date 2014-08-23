@@ -2,6 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,700);
 
 
+// Font variants
+// - 300: body text
+// - 400: highlighted text
+// - 700: title text
+
 
 // Heading sizes
 // - based on lamb.cc/typograph using Le Corbuisier
@@ -34,11 +39,14 @@ $heading-level-8: 6.8462em;
     
   } @elseif ($type == box-title) {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     @include uppercase;
+  
+  } @elseif ($type == highlight) {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
   }
 }
-
 
 
 
