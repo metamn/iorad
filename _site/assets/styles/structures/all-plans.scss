@@ -10,6 +10,20 @@
       margin-top: $gutter;
       @include list-underlined;
       @include font(highlight);
+      
+      li {
+        span {
+          &.checkmark {
+            margin-left: $gutter / 2;
+            
+            img {
+              max-height: $gutter;
+              position: relative;
+              top: $gutter / 4;
+            }
+          }
+        }
+      }
     }
   }
 }

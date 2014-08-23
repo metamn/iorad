@@ -10,6 +10,7 @@
     
     p {
       @include font(subtitle);
+      margin-top: $gutter;
     }
   }
 }
