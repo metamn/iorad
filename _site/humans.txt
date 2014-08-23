@@ -8,8 +8,7 @@ Location: Budapest, Hungary
 
 
 /* THANKS */
-Harsh backgrounds: Caey Olson, http://www.bookcasey.com/harsh/
-
+Checkmark icon, Public Domain, http://thenounproject.com/term/check-mark/61754/
 
 /* SITE */
 Last update: YYYY/MM/DD

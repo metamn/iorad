@@ -1,0 +1,8 @@
+{% assign svg = include.icon | append: '.svg' %}
+{% assign png = include.icon | append: '.png' %}
+
+
+<span>{{ include.text }}</span>
+<span class="checkmark">
+  {% include atoms/svg.html svg=svg png=png title=include.text %}
+</span>
