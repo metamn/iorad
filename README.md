@@ -1,3 +1,10 @@
+## Colors
+
+1. The white on light blue can be used for large text only, mainly for headings: http://leaverou.github.io/contrast-ratio/#white-on-%23276497
+2. The white on green is absolutely unusable: http://leaverou.github.io/contrast-ratio/#white-on-%2300ba75
+3. The white on red is absolutely unusable: http://leaverou.github.io/contrast-ratio/#white-on-%23ff615f
+
+
 ## I think the copy is too verbose / technical
 
 1. "The ready to hand over" is not necessary at all

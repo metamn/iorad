@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* The text must be inside a <span> */
 /* for very combination check the contrast ratio !!! - http://leaverou.github.io/contrast-ratio/
- - black on white: 18.4 - black on orange: 11 - white on violet: 3.1, only suitable for large fonts - black on green: 15.4
+ - white on darkblue: 14.9 - white on blue: 9.6 - white on lightblue: 6.3, only suitable for large fonts, 18pt and above - white on green: 2.5, not usable - white on red: 2.5, not usable
 */
 /* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
 */
@@ -31,10 +31,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
-html body { font-size: 125%; line-height: 1.25; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; color: #011915; background-color: white; }
+html body { font-size: 125%; line-height: 1.25; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; color: white; background-color: #162746; }
 @media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
-html body a { color: #011915; background-color: white; }
+html body a { color: white; background-color: #162746; }
 html body .portrait { display: none; }
 @media only screen and (max-width: 63.999em) { html body .landscape { display: none; }
   html body .portrait { display: block; } }
