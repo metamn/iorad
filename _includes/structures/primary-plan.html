@@ -1,0 +1,60 @@
+{% assign id = include.id | times: 1 %}
+{% assign plan = page.plans[id] %}
+
+<article class="primary-plan">
+  <h3>{{ plan.title }}</h3>
+  
+  <div class="container">
+    <div class="title">
+      <h2>{{ plan.title }}</h2>
+    </div>
+    
+    <div class="subtitle">
+      <p>
+        {{ plan.subtitle }}
+      </p>
+    </div>
+    
+    <div class="users">
+      1 Users
+    </div>
+    
+    <div class="price">
+      {% if plan.price == "Contact us" %}
+        {{ plan.price }}
+      {% else %}
+        ${{ plan.price }}/month
+      {% endif %}
+    </div>
+    
+    <div class="features">
+      <ul>
+        {% for feature in plan.features %}
+          <li>
+            <span class="feature">
+              {{ feature.title }}
+            </span>
+            
+            <span class="feature-description">
+              {{ feature.description }}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    {% if plan.billed %}
+      <div class="billed">
+        <p>
+          {{ plan.billed }}
+        </p>
+      </div>
+    {% endif %}
+    
+    <div class="button">
+      <p>
+        {{ plan.button }}
+      </p>
+    </div>
+  </div>
+</article>
