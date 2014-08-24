@@ -1,0 +1,7 @@
+<aside id="primary-plans">
+  <h3>Primary Plans</h3>
+
+  {% for plan in page.plans %}
+    {% include organisms/primary-plan.html id=forloop.index %}
+  {% endfor %}
+</aside>

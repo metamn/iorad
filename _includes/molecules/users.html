@@ -1,0 +1,13 @@
+{% assign select = plan.select[0] %}
+
+{% if select %}
+  <div class="users">
+    <div class="selectbox">
+      <select>
+        {% for i in (1..select.max) %}
+          <option value="{{ i }}">{{ i }} {{ select.text }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+{% endif %}

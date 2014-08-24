@@ -1,0 +1,17 @@
+{% assign id = include.id | times: 1 %}
+{% assign plan = page.plans[id] %}
+
+<article id="{% include atoms/classname.html title=plan.title %}" class="primary-plan {% include atoms/classname.html title=plan.class %}">
+  <div class="container">
+    {% include molecules/most-popular.html %}
+    
+    {% include molecules/title.html %}
+    {% include molecules/subtitle.html %}
+    {% include molecules/users.html %}
+    {% include molecules/price.html %}
+    {% include molecules/instead-of-price.html %}
+    {% include molecules/features.html %}
+    {% include molecules/billed.html %}
+    {% include molecules/button.html %}
+  </div>
+</article>

@@ -1,0 +1,15 @@
+@mixin price {
+  .usd {
+    @include circle-with-text($gutter * 2);
+    @include colors(darkblue-on-green);
+    @include font(highlight);
+    border: none;
+
+    position: relative;
+    top: -$gutter / 2;
+
+    span {
+      top: $gutter / 2;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{% assign price = plan.price[0] %}
+
+{% if price %}
+  <div class="price">
+    <span class="usd">
+      <span>${{ price.usd }}</span>
+    </span>
+    <span>/ {{ price.text }}</span>
+  </div>
+{% endif %}

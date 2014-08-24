@@ -4,8 +4,12 @@ title: Pricing
 plans:
   - title: Individual/Tiny Team
     subtitle: Up to 4 Users
-    users: 4
-    price: 32
+    select: 
+      - max: 4
+        text: users
+    price: 
+      - usd: 32
+        text: month
     billed: Billed annually or $40 month-to-month
     button: Upgrade
     features:
@@ -13,8 +17,12 @@ plans:
         description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
   - title: Team
     subtitle: Up to 17 Users
-    users: 17
-    price: 128
+    select: 
+      - max: 17
+        text: users
+    price: 
+      - usd: 128
+        text: month
     features:
       - title: 5 Custom Themes
         description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
@@ -30,6 +38,25 @@ plans:
       - title: Host on your own server
         description: Download a html zip of your tutorial and host it on Sharepoint or your own server
     button: Contact Us
+one-timer-plan:
+  - subtitle: Not interested in monthly plans?
+    select: 
+      - max: 4
+        text: tutorials
+    price: 
+      - usd: 18
+        text: tutorial
+    features:
+      - title: Pay by the tutorial
+      - title: Includes private sharing and the handy data masker. Custom Theme, docx/pptx (strikethrough effect to show not included)
+      - title: A handy dandy data masker enables you to hide sensitive info on screenshots
+    button: One Timer Plan
+free-plan:
+  - title: The Free Plan
+    subtitle: Unlimited Public Tutorials
+    features:
+      - title: Privacy and logos mean nothing. I just want to share my knowledge
+    button: Subscribed
 faqs:
   - title: Example question?
     answer: Example answer. 
@@ -53,11 +80,19 @@ faqs:
     answer: Read our Terms of Service and Privacy Policy. 
 ---
 
+
+
+
+
 <header class="bottom-shadow animated" id="header">
   <div class="container">
     &nbsp;
   </div>
 </header>
+
+
+
+
 
 
 <!-- my code starts here -->
@@ -66,26 +101,9 @@ faqs:
   {% include structures/title.html %}
   {% include structures/all-plans.html %}
   
-  <aside id="primary-plans">
-    <h3>Primary Plans</h3>
-    
-    {% for plan in page.plans %}
-      {% include structures/primary-plan.html id=forloop.index %}
-    {% endfor %}
-  </aside>
+  {% include structures/primary-plans.html %}
+  {% include structures/secondary-plans.html %}
   
-  <aside id="secondary-plans">
-    <h3>Secondary Plans</h3>
-    
-    {% include structures/one-timer-plan.html %}
-    {% include structures/free-plan.html %}
-  </aside>
 </section>
 
-<section id="faq">
-  <h3>FAQ</h3>
-  
-  {% for faq in page.faqs %}
-    {% include structures/faq.html id=forloop.index %}
-  {% endfor %}
-</section>
+{% include structures/faqs.html %}
