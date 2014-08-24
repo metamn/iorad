@@ -20,7 +20,18 @@
     @include price;
   }
   
+
+  .instead-of-price {
+    margin-top: $gutter;
+    
+    p {
+      @include button;
+      @include colors(darkblue-on-green);
+      font-size: 100%;
+    }
+  }
   
+
   .features {
     @include features;
   }

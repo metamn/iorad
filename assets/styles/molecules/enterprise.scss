@@ -2,13 +2,10 @@
   @include landscape {
     .instead-of-price {
       @include block;
-      height: $gutter * 7;
+      height: $gutter * 6;
       
-      p {
+      .instead-of-price p {
         margin-top: $gutter + $gutter / 4;
-        @include button;
-        @include colors(darkblue-on-green);
-        font-size: 100%;
       }
     }
 
