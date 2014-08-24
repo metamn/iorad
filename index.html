@@ -53,11 +53,19 @@ faqs:
     answer: Read our Terms of Service and Privacy Policy. 
 ---
 
+
+
+
+
 <header class="bottom-shadow animated" id="header">
   <div class="container">
     &nbsp;
   </div>
 </header>
+
+
+
+
 
 
 <!-- my code starts here -->
@@ -66,26 +74,13 @@ faqs:
   {% include structures/title.html %}
   {% include structures/all-plans.html %}
   
-  <aside id="primary-plans">
-    <h3>Primary Plans</h3>
-    
-    {% for plan in page.plans %}
-      {% include structures/primary-plan.html id=forloop.index %}
-    {% endfor %}
-  </aside>
+  {% include structures/primary-plans.html %}
+  {% include structures/secondary-plans.html %}
   
-  <aside id="secondary-plans">
-    <h3>Secondary Plans</h3>
-    
-    {% include structures/one-timer-plan.html %}
-    {% include structures/free-plan.html %}
-  </aside>
 </section>
 
 <section id="faq">
   <h3>FAQ</h3>
   
-  {% for faq in page.faqs %}
-    {% include structures/faq.html id=forloop.index %}
-  {% endfor %}
+  {% include structures/faqs.html %}
 </section>
