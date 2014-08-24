@@ -1,0 +1,53 @@
+@mixin primary-plan {
+  .title {
+    h2 {
+      @include font(box-title);
+    }
+  }
+  
+  .subtitle {
+    p {
+      @include font(subtitle);
+    }
+  }
+  
+  .users {
+    margin: $gutter 0;
+  }
+  
+  .price {
+  
+  }
+  
+  .features {
+    margin-top: $gutter;
+    
+    ul {
+      @include list-underlined;
+      @include font(highlight);
+      
+      li {
+        span {
+          &.feature-description {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .billed {
+    margin-top: $gutter;
+    p {
+      @include font(subtitle);
+    }
+  }
+  
+  .button {
+    margin-top: $gutter;
+    
+    p {
+      @include button;
+    }
+  }
+}

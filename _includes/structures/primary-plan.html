@@ -1,7 +1,7 @@
 {% assign id = include.id | times: 1 %}
 {% assign plan = page.plans[id] %}
 
-<article class="primary-plan">
+<article class="primary-plan {% include atoms/classname.html title=plan.class %}">
   <div class="container">
     <div class="title">
       <h2>{{ plan.title }}</h2>

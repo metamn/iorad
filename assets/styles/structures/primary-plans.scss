@@ -1,0 +1,32 @@
+@mixin primary-plans {
+  margin-top: $gutter * 2;
+  
+  @include primary-plan-container;
+  
+  article {
+    @include center($text-width);
+    @include symmetric-grid($gutter, 1px);
+    margin-bottom: $gutter * 2;
+    
+    border: 1px solid $blue;
+    padding: $gutter;
+    
+    .container {
+      @include primary-plan;
+    }
+  }
+}
+
+
+
+@mixin primary-plan-container {
+  
+  @include portrait {
+    @include padding($padding: $gutter);
+  }
+  
+  @include landscape {
+    @include padding($padding: 10%);
+  }
+}
+

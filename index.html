@@ -18,6 +18,7 @@ plans:
         description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
     billed: Billed annually or $160 month-to-month
     button: Upgrade 
+    class: popular
   - title: Enterprise
     subtitle: 20+ Users
     price: Contact us
@@ -64,10 +65,9 @@ faqs:
   {% include structures/all-plans.html %}
   
   <aside id="primary-plans">
-    <h3>Premium Plans</h3>
+    <h3>Primary Plans</h3>
     
     {% for plan in page.plans %}
-      <p>&nbsp;</p>
       {% include structures/primary-plan.html id=forloop.index %}
     {% endfor %}
   </aside>
