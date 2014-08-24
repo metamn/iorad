@@ -1,8 +1,16 @@
 {% assign id = include.id | times: 1 %}
 {% assign plan = page.plans[id] %}
 
-<article class="primary-plan {% include atoms/classname.html title=plan.class %}">
+<article id="{% include atoms/classname.html title=plan.title %}" class="primary-plan {% include atoms/classname.html title=plan.class %}">
   <div class="container">
+    {% if plan.class == "popular" %}
+      <div class="popular">
+        <p>
+          Most popular
+        </p>
+      </div>
+    {% endif %}
+    
     <div class="title">
       <h2>{{ plan.title }}</h2>
     </div>
@@ -21,7 +29,7 @@
       {% if plan.price == "Contact us" %}
         {{ plan.price }}
       {% else %}
-        ${{ plan.price }}/month
+        <span>${{ plan.price }}</span> / month
       {% endif %}
     </div>
     

@@ -16,7 +16,10 @@
   }
   
   .price {
-  
+    span {
+      @include colors(green-on-darkblue);
+      @include font(highlight);
+    }
   }
   
   .features {
@@ -48,6 +51,28 @@
     
     p {
       @include button;
+    }
+  }
+  
+  .popular {
+    display: none;
+    @include block;
+    position: absolute;
+    //top: calc(#{-$gutter} - 1px);
+    top: -$gutter - $gutter / 2;
+    left: 0;
+    
+    @include colors(green-on-darkblue);
+    @include font(box-title);
+  }
+  
+  
+  // Billing is missing, so we make all plans equal height on desktops
+  &#enterprise {
+    @include landscape {
+      .button {
+        margin-top: $gutter * 3 - $gutter / 4;
+      }
     }
   }
 }

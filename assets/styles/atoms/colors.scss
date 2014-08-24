@@ -16,6 +16,7 @@ $black: black;
   - white on lightblue: 6.3, only suitable for large fonts, 18pt and above
   - white on green: 2.5, not usable
   - white on red: 2.5, not usable
+  - green on darkblue: 5.9, only suitable for large fonts, 18pt and above
 */
 
 @mixin colors($combination: white-on-darkblue) {
@@ -32,6 +33,10 @@ $black: black;
     background-color: $lightblue;
     font-size: $heading-level-1;
     
+  } @elseif ($combination == green-on-darkblue) {
+    color: $green;
+    background-color: $darkblue;
+    font-size: $heading-level-1;
   }
 }
 
