@@ -2,38 +2,13 @@
   <div class="container">
     <h3>One Timer Plan</h3>
     
-    <div class="subtitle">
-      <p>
-        Not interested in monthly plans?
-      </p>
-    </div>
+    {% assign plan = site.one-timer-plan[0] %}
     
-    <div class="price">
-      $18
-    </div>
+    {% include molecules/subtitle.html %}
+    {% include molecules/users.html %}
+    {% include molecules/price.html %}
+    {% include molecules/features.html %}
+    {% include molecules/button.html %}
     
-    <div class="users">
-      1 Tutorial
-    </div>
-    
-    <div class="features">
-      <p>
-        Pay by the tutorial.
-      </p>
-      
-      <p>
-        Includes: Private sharing and the handy data masker.; Custom Theme, docx/pptx (strikethrough effect to show not included)
-      </p>
-      
-      <span class="feature-description">
-        A handy dandy data masker enables you to hide sensitive info on screenshots
-      </span>
-    </div>
-    
-    <div class="button">
-      <p>
-        One Timer Plan
-      </p>
-    </div>
   </div>
 </article>

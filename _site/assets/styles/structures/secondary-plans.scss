@@ -1,9 +1,9 @@
-@mixin primary-plans {
+@mixin secondary-plans {
   @include primary-plan-container;
   
   article {
     @include center($text-width);
-    @include symmetric-grid(3, $gutter, 1px);
+    @include symmetric-grid(2, $gutter, 1px);
     margin-bottom: $gutter * 2;
     
     border: 1px solid $blue;
@@ -16,14 +16,10 @@
 
 
 
-@mixin primary-plan-container {
+@mixin secondary-plan-container {
   @include portrait {
     margin-top: $gutter * 2;
     @include padding($padding: $gutter);
-    
-    article.popular {
-      margin-top: $gutter * 2;
-    }
   }
   
   @include landscape {

@@ -14,7 +14,7 @@ html.pricing {
       }
       
       #secondary-plans {
-        display: none;
+        @include secondary-plans;
       }
     }
     

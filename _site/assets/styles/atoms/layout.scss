@@ -1,7 +1,13 @@
-@mixin symmetric-grid($padding: 0, $border: 0) {
+@mixin symmetric-grid($cols: 3, $padding: 0, $border: 0) {
   float: left;
-  @include padding(30%, $padding, $border);
-  margin-right: 5%;
+  
+  @if ($cols == 3) {
+    @include padding(30%, $padding, $border);
+    margin-right: 5%;
+  } @elseif ($cols == 2) {
+    @include padding(47.5%, $padding, $border);
+    margin-right: 5%;
+  }
 
   &:last-of-type {
     margin-right: 0;
