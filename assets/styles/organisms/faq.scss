@@ -1,0 +1,37 @@
+@mixin faq {
+  article {
+    @include show-title;
+    margin-top: $gutter * 2;
+
+    @include center($text-width);
+
+    .container {
+      max-width: $text-width;
+      
+      h3 {
+        @include font(box-title);
+      }
+      
+      p {
+        margin-top: $gutter;
+      }
+      
+      @include landscape {
+        @include faq-border;
+      }
+    }
+    
+  }
+}
+
+
+@mixin faq-border {
+  &:after {
+    content: ' ';
+    display: inline-block;
+    border-bottom: 1px solid $blue;
+    margin-top: $gutter * 2;
+    margin-bottom: $gutter;
+    width: 30%;
+  }
+} 

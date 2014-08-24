@@ -132,8 +132,10 @@ html.pricing body #faq .container { text-align: center; display: inline-block; p
 html.pricing body #faq .container article { margin-top: 2.5em; text-align: center; }
 html.pricing body #faq .container article > h3 { display: block; }
 html.pricing body #faq .container article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
-html.pricing body #faq .container article h3 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
+html.pricing body #faq .container article .container { max-width: 31.25em; }
+html.pricing body #faq .container article .container h3 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #faq .container article .container p { margin-top: 1.25em; }
+@media only screen and (min-width: 64em) { html.pricing body #faq .container article .container:after { content: ' '; display: inline-block; border-bottom: 1px solid #2f456c; margin-top: 2.5em; margin-bottom: 1.25em; width: 30%; } }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
