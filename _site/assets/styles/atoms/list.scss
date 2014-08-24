@@ -1,8 +1,14 @@
-@mixin list-underlined($padding: $gutter / 2, $color: $blue) {
+@mixin list-underlined($padding: $gutter / 2, $color: $blue, $no-last-border: false) {
   li {
     margin-bottom: $padding / 2;
     padding-bottom: $padding / 2;
     border-bottom: 1px solid $color;
+    
+    @if ($no-last-border == true) {
+      &:last-of-type {
+        border: none;
+      }
+    }
   }
 }
 

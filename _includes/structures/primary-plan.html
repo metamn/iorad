@@ -21,9 +21,17 @@
       </p>
     </div>
     
-    <div class="users">
-      1 Users
-    </div>
+    {% if plan.users %}
+      <div class="users">
+        <div class="selectbox">
+          <select>
+            {% for i in (1..plan.users) %}
+              <option value="{{ i }}">{{ i }} users</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    {% endif %}
     
     {% if plan.price %}
       <div class="price">
@@ -33,6 +41,7 @@
         <span>/ month</span>
       </div>
     {% endif %}
+    
     
     {% if plan.instead-of-price %}
       <div class="instead-of-price">
