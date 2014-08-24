@@ -3,7 +3,11 @@
     
   .selectbox {
     border: 1px solid $blue;
-    background: transparent url("/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%;
+    background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%;
+    
+    @include portrait {
+      background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-medium.png") no-repeat 99% 50%;
+    }
 
     width: 70%;
     margin: 0 15%;

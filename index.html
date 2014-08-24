@@ -4,8 +4,12 @@ title: Pricing
 plans:
   - title: Individual/Tiny Team
     subtitle: Up to 4 Users
-    users: 4
-    price: 32
+    select: 
+      - max: 4
+        text: users
+    price: 
+      - usd: 32
+        text: month
     billed: Billed annually or $40 month-to-month
     button: Upgrade
     features:
@@ -13,8 +17,12 @@ plans:
         description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
   - title: Team
     subtitle: Up to 17 Users
-    users: 17
-    price: 128
+    select: 
+      - max: 17
+        text: users
+    price: 
+      - usd: 128
+        text: month
     features:
       - title: 5 Custom Themes
         description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
@@ -32,8 +40,12 @@ plans:
     button: Contact Us
 one-timer-plan:
   - subtitle: Not interested in monthly plans?
-    users: 4
-    price: 18
+    select: 
+      - max: 4
+        text: tutorials
+    price: 
+      - usd: 18
+        text: tutorial
     features:
       - title: Pay by the tutorial
       - title: Includes private sharing and the handy data masker. Custom Theme, docx/pptx (strikethrough effect to show not included)

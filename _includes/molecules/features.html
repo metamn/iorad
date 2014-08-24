@@ -1,14 +1,22 @@
 <div class="features">
   <ul>
     {% for feature in plan.features %}
+      {% if feature.description %}
+        {% assign class = 'with-description' %}
+      {% else %}
+        {% assign class = 'no-description' %}
+      {% endif %}
+      
       <li>
-        <span class="feature">
+        <span class="feature {{ class }}">
           {{ feature.title }}
         </span>
-
-        <span class="feature-description">
-          {{ feature.description }}
-        </span>
+        
+        {% if feature.description %}
+          <span class="feature-description">
+            {{ feature.description }}
+          </span>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

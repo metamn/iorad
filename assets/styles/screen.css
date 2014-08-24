@@ -67,7 +67,8 @@ html.pricing body #pricing #primary-plans article:last-of-type { margin-right: 0
 html.pricing body #pricing #primary-plans article .title h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #pricing #primary-plans article .subtitle p { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-style: italic; }
 html.pricing body #pricing #primary-plans article .users { margin: 1.25em 0; }
-html.pricing body #pricing #primary-plans article .users .selectbox { border: 1px solid #2f456c; background: transparent url("/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%; width: 70%; margin: 0 15%; overflow: hidden; }
+html.pricing body #pricing #primary-plans article .users .selectbox { border: 1px solid #2f456c; background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%; width: 70%; margin: 0 15%; overflow: hidden; }
+@media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article .users .selectbox { background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-medium.png") no-repeat 99% 50%; } }
 html.pricing body #pricing #primary-plans article .users .selectbox select { color: white; background-color: #162746; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 100%; padding: 5px 8px; width: 130%; border: none; box-shadow: none; background: transparent; background-image: none; -webkit-appearance: none; }
 html.pricing body #pricing #primary-plans article .price .usd { width: 2.5em; height: 2.5em; -webkit-border-radius: 2.5em; -moz-border-radius: 2.5em; -ms-border-radius: 2.5em; -o-border-radius: 2.5em; border-radius: 2.5em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; border: none; position: relative; top: -0.625em; }
 html.pricing body #pricing #primary-plans article .price .usd span { position: relative; top: 0.83333em; }
@@ -75,9 +76,8 @@ html.pricing body #pricing #primary-plans article .price .usd span { top: 0.625e
 html.pricing body #pricing #primary-plans article .features { margin-top: 1.25em; }
 html.pricing body #pricing #primary-plans article .features ul { font-family: 'Source Sans Pro', sans-serif; font-weight: 400; }
 html.pricing body #pricing #primary-plans article .features ul li { margin-bottom: 0.3125em; padding-bottom: 0.3125em; border-bottom: 1px solid #2f456c; }
-html.pricing body #pricing #primary-plans article .features ul li span.feature:after { content: '?'; margin-left: 0.625em; color: #00ba75; background-color: transparent; font-size: smaller; cursor: pointer; }
-html.pricing body #pricing #primary-plans article .features ul li span.feature:after a { color: #00ba75; background-color: transparent; }
-@media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article .features ul li span.feature:after { margin-left: 2px; } }
+html.pricing body #pricing #primary-plans article .features ul li span.feature.with-description:after { content: url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-small.png"); margin-left: 0.625em; position: relative; top: 2px; cursor: pointer; }
+@media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article .features ul li span.feature.with-description:after { margin-left: 0px; top: 0.3125em; } }
 html.pricing body #pricing #primary-plans article .features ul li span.feature-description { display: none; }
 html.pricing body #pricing #primary-plans article .billed { margin-top: 1.25em; }
 html.pricing body #pricing #primary-plans article .billed p { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-style: italic; }
@@ -98,7 +98,8 @@ html.pricing body #pricing #secondary-plans article:last-of-type { margin-right:
 html.pricing body #pricing #secondary-plans article .title h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #pricing #secondary-plans article .subtitle p { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-style: italic; }
 html.pricing body #pricing #secondary-plans article .users { margin: 1.25em 0; }
-html.pricing body #pricing #secondary-plans article .users .selectbox { border: 1px solid #2f456c; background: transparent url("/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%; width: 70%; margin: 0 15%; overflow: hidden; }
+html.pricing body #pricing #secondary-plans article .users .selectbox { border: 1px solid #2f456c; background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%; width: 70%; margin: 0 15%; overflow: hidden; }
+@media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans article .users .selectbox { background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-medium.png") no-repeat 99% 50%; } }
 html.pricing body #pricing #secondary-plans article .users .selectbox select { color: white; background-color: #162746; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 100%; padding: 5px 8px; width: 130%; border: none; box-shadow: none; background: transparent; background-image: none; -webkit-appearance: none; }
 html.pricing body #pricing #secondary-plans article .price .usd { width: 2.5em; height: 2.5em; -webkit-border-radius: 2.5em; -moz-border-radius: 2.5em; -ms-border-radius: 2.5em; -o-border-radius: 2.5em; border-radius: 2.5em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; border: none; position: relative; top: -0.625em; }
 html.pricing body #pricing #secondary-plans article .price .usd span { position: relative; top: 0.83333em; }
@@ -106,9 +107,8 @@ html.pricing body #pricing #secondary-plans article .price .usd span { top: 0.62
 html.pricing body #pricing #secondary-plans article .features { margin-top: 1.25em; }
 html.pricing body #pricing #secondary-plans article .features ul { font-family: 'Source Sans Pro', sans-serif; font-weight: 400; }
 html.pricing body #pricing #secondary-plans article .features ul li { margin-bottom: 0.3125em; padding-bottom: 0.3125em; border-bottom: 1px solid #2f456c; }
-html.pricing body #pricing #secondary-plans article .features ul li span.feature:after { content: '?'; margin-left: 0.625em; color: #00ba75; background-color: transparent; font-size: smaller; cursor: pointer; }
-html.pricing body #pricing #secondary-plans article .features ul li span.feature:after a { color: #00ba75; background-color: transparent; }
-@media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans article .features ul li span.feature:after { margin-left: 2px; } }
+html.pricing body #pricing #secondary-plans article .features ul li span.feature.with-description:after { content: url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-small.png"); margin-left: 0.625em; position: relative; top: 2px; cursor: pointer; }
+@media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans article .features ul li span.feature.with-description:after { margin-left: 0px; top: 0.3125em; } }
 html.pricing body #pricing #secondary-plans article .features ul li span.feature-description { display: none; }
 html.pricing body #pricing #secondary-plans article .billed { margin-top: 1.25em; }
 html.pricing body #pricing #secondary-plans article .billed p { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-style: italic; }

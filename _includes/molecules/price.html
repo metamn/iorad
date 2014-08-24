@@ -1,8 +1,10 @@
-{% if plan.price %}
+{% assign price = plan.price[0] %}
+
+{% if price %}
   <div class="price">
     <span class="usd">
-      <span>${{ plan.price }}</span>
+      <span>${{ price.usd }}</span>
     </span>
-    <span>/ month</span>
+    <span>/ {{ price.text }}</span>
   </div>
 {% endif %}
