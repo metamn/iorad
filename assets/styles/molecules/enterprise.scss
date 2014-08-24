@@ -1,13 +1,15 @@
 @mixin enterprise {
   @include landscape {
     .instead-of-price {
+      @include block;
+      height: $gutter * 7;
+      
       p {
         margin-top: $gutter + $gutter / 4;
-      } 
-    }
-
-    .features {
-      margin-top: $gutter * 2 + $gutter / 2;
+        @include button;
+        @include colors(darkblue-on-green);
+        font-size: 100%;
+      }
     }
 
     .button {
