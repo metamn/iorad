@@ -53,7 +53,6 @@ html.pricing body #pricing #all-plans .container ul { margin-top: 1.25em; font-f
 html.pricing body #pricing #all-plans .container ul li { margin-bottom: 0.3125em; padding-bottom: 0.3125em; border-bottom: 1px solid #2f456c; }
 html.pricing body #pricing #all-plans .container ul li span.checkmark { margin-left: 0.625em; }
 html.pricing body #pricing #all-plans .container ul li span.checkmark img { max-height: 1.25em; position: relative; top: 0.3125em; }
-html.pricing body #pricing #primary-plans { display: none; }
 html.pricing body #pricing #secondary-plans { display: none; }
 html.pricing body #faq { display: none; }
 

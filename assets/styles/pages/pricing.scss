@@ -10,7 +10,7 @@ html.pricing {
       }
       
       #primary-plans {
-        display: none;
+        @include primary-plans;
       }
       
       #secondary-plans {
