@@ -7,21 +7,6 @@
   margin: $gutter * 2 0;
   
   .container {
-    article {
-      @include show-title;
-      margin-top: $gutter * 2;
-      
-      @include center($text-width);
-      
-      h3 {
-        @include font(box-title);
-      }
-
-      .container {
-        p {
-          margin-top: $gutter;
-        }
-      }
-    }
+    @include faq;
   }
 }
