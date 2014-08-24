@@ -119,6 +119,7 @@ html.pricing body #pricing #secondary-plans article .popular { display: none; wi
 @media only screen and (min-width: 64em) { html.pricing body #pricing #secondary-plans article#enterprise .instead-of-price p { margin-top: 1.5625em; }
   html.pricing body #pricing #secondary-plans article#enterprise .features { margin-top: 3.125em; }
   html.pricing body #pricing #secondary-plans article#enterprise .button { margin-top: 3.125em; } }
+html.pricing body #pricing #secondary-plans article .container > h3 { display: none; }
 html.pricing body #faq { display: none; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }

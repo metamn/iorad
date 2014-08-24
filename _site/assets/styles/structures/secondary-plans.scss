@@ -11,6 +11,10 @@
     
     position: relative;
     @include primary-plan;
+    
+    .container {
+      @include hide-title;
+    }
   }
 }
 
