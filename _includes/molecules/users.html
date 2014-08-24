@@ -1,0 +1,11 @@
+{% if plan.users %}
+  <div class="users">
+    <div class="selectbox">
+      <select>
+        {% for i in (1..plan.users) %}
+          <option value="{{ i }}">{{ i }} users</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+{% endif %}

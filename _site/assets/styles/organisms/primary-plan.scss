@@ -12,82 +12,17 @@
   }
   
   .users {
-    margin: $gutter 0;
-    
-    .selectbox {
-      border: 1px solid $blue;
-      background: transparent url("/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%;
-      
-      width: 70%;
-      margin: 0 15%;
-      
-      overflow: hidden;
-      
-      select {
-        @include colors;
-        @include font;
-        font-size: 100%;
-        
-        padding: 5px 8px;
-        width: 130%;
-        border: none;
-        box-shadow: none;
-        background: transparent;
-        background-image: none;
-        -webkit-appearance: none;
-      }
-    }
+    @include users;
   }
   
   
   .price {
-    .usd {
-      @include circle-with-text($gutter * 2);
-      @include colors(darkblue-on-green);
-      @include font(highlight);
-      border: none;
-      
-      position: relative;
-      top: -$gutter / 2;
-      
-      span {
-        top: $gutter / 2;
-      }
-    }
+    @include price;
   }
   
   
   .features {
-    margin-top: $gutter;
-    
-    ul {
-      @include list-underlined;
-      @include font(highlight);
-      
-      li {
-        span {
-          &.feature {
-            &:after {
-              content: '?';
-              margin-left: $gutter / 2;
-              @include color($green);
-              font-size: smaller;
-              
-              // On mobile the question mark is too big, and sometimes is put alone in a new line
-              @include portrait {
-                margin-left: 2px;
-              }
-              
-              cursor: pointer;
-            }
-          }
-          
-          &.feature-description {
-            display: none;
-          }
-        }
-      }
-    }
+    @include features;
   }
   
   .billed {
@@ -106,34 +41,12 @@
   }
   
   .popular {
-    display: none;
-    @include block;
-    position: absolute;
-    //top: calc(#{-$gutter} - 1px);
-    top: -$gutter - $gutter / 2;
-    left: 0;
-    
-    @include colors(green-on-darkblue);
-    @include font(box-title);
+    @include most-popular;
   }
   
   
   // Billing is missing, so we make all plans equal height on desktops
   &#enterprise {
-    @include landscape {
-      .instead-of-price {
-        p {
-          margin-top: $gutter + $gutter / 4;
-        } 
-      }
-      
-      .features {
-        margin-top: $gutter * 2 + $gutter / 2;
-      }
-      
-      .button {
-        margin-top: $gutter * 2 + $gutter / 2;
-      }
-    }
+    @include enterprise;
   }
 }

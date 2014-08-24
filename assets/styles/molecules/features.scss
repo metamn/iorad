@@ -1,0 +1,32 @@
+@mixin features {
+  margin-top: $gutter;
+    
+  ul {
+    @include list-underlined;
+    @include font(highlight);
+
+    li {
+      span {
+        &.feature {
+          &:after {
+            content: '?';
+            margin-left: $gutter / 2;
+            @include color($green);
+            font-size: smaller;
+
+            // On mobile the question mark is too big, and sometimes is put alone in a new line
+            @include portrait {
+              margin-left: 2px;
+            }
+
+            cursor: pointer;
+          }
+        }
+
+        &.feature-description {
+          display: none;
+        }
+      }
+    }
+  }
+}

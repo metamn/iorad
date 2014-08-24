@@ -28,7 +28,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
 */
-/* No files to import found in molecules/* */
 html body { font-size: 125%; line-height: 1.25; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; color: white; background-color: #162746; }
 @media only screen and (max-width: 63.999em) { html body { font-size: 100%; } }
 @media only screen and (min-width: 90.001em) { html body { font-size: 150%; } }
