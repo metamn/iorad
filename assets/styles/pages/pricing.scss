@@ -19,7 +19,7 @@ html.pricing {
     }
     
     #faq {
-      display: none;
+      @include faqs;
     }
   }
 }

@@ -142,4 +142,10 @@
   }
 }
 
+@mixin show-title {
+  > h3 {
+    display: block;
+  }
+}
+
 

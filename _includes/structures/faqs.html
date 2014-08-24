@@ -1,4 +1,9 @@
-
-{% for faq in page.faqs %}
-  {% include organisms/faq.html id=forloop.index %}
-{% endfor %}
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+  
+  <div class="container">
+    {% for faq in page.faqs %}
+      {% include organisms/faq.html id=forloop.index %}
+    {% endfor %}
+  </div>
+</section>

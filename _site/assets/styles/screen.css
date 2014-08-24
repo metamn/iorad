@@ -120,7 +120,14 @@ html.pricing body #pricing #secondary-plans article .popular { display: none; wi
   html.pricing body #pricing #secondary-plans article#enterprise .features { margin-top: 3.125em; }
   html.pricing body #pricing #secondary-plans article#enterprise .button { margin-top: 3.125em; } }
 html.pricing body #pricing #secondary-plans article .container > h3 { display: none; }
-html.pricing body #faq { display: none; }
+html.pricing body #faq { text-align: center; margin: 2.5em 0; }
+html.pricing body #faq h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; font-size: 1.6154em; text-transform: uppercase; letter-spacing: 0.10417em; line-height: 1; }
+html.pricing body #faq .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }
+html.pricing body #faq .container article { margin-top: 2.5em; text-align: center; }
+html.pricing body #faq .container article > h3 { display: block; }
+html.pricing body #faq .container article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html.pricing body #faq .container article h3 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
+html.pricing body #faq .container article .container p { margin-top: 1.25em; }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
