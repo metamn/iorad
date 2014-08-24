@@ -1,8 +1,16 @@
 {% assign id = include.id | times: 1 %}
 {% assign plan = page.plans[id] %}
 
-<article class="primary-plan {% include atoms/classname.html title=plan.class %}">
+<article id="{% include atoms/classname.html title=plan.title %}" class="primary-plan {% include atoms/classname.html title=plan.class %}">
   <div class="container">
+    {% if plan.class == "popular" %}
+      <div class="popular">
+        <p>
+          Most popular
+        </p>
+      </div>
+    {% endif %}
+    
     <div class="title">
       <h2>{{ plan.title }}</h2>
     </div>
@@ -13,17 +21,36 @@
       </p>
     </div>
     
-    <div class="users">
-      1 Users
-    </div>
+    {% if plan.users %}
+      <div class="users">
+        <div class="selectbox">
+          <select>
+            {% for i in (1..plan.users) %}
+              <option value="{{ i }}">{{ i }} users</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+    {% endif %}
     
-    <div class="price">
-      {% if plan.price == "Contact us" %}
-        {{ plan.price }}
-      {% else %}
-        ${{ plan.price }}/month
-      {% endif %}
-    </div>
+    {% if plan.price %}
+      <div class="price">
+        <span class="usd">
+          <span>${{ plan.price }}</span>
+        </span>
+        <span>/ month</span>
+      </div>
+    {% endif %}
+    
+    
+    {% if plan.instead-of-price %}
+      <div class="instead-of-price">
+        <p>
+          {{ plan.instead-of-price }}
+        </p>
+      </div>
+    {% endif %}
+    
     
     <div class="features">
       <ul>

@@ -9,6 +9,7 @@ Location: Budapest, Hungary
 
 /* THANKS */
 Checkmark icon, Public Domain, http://thenounproject.com/term/check-mark/61754/
+Arrow icon, by <a href="http://www.thenounproject.com/tomwalshdesign">Tom Walsh</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
 
 /* SITE */
 Last update: YYYY/MM/DD

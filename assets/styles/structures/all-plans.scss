@@ -8,7 +8,13 @@
     
     ul {
       margin-top: $gutter;
-      @include list-underlined;
+      
+      border: 1px solid $blue;
+      @include padding($border: 1px);
+      padding-top: $gutter / 2;
+      padding-bottom: 0;
+      
+      @include list-underlined($no-last-border: true);
       @include font(highlight);
       
       li {
