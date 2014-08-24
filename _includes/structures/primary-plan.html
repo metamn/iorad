@@ -25,13 +25,23 @@
       1 Users
     </div>
     
-    <div class="price">
-      {% if plan.price == "Contact us" %}
-        {{ plan.price }}
-      {% else %}
-        <span>${{ plan.price }}</span> / month
-      {% endif %}
-    </div>
+    {% if plan.price %}
+      <div class="price">
+        <span class="usd">
+          <span>${{ plan.price }}</span>
+        </span>
+        <span>/ month</span>
+      </div>
+    {% endif %}
+    
+    {% if plan.instead-of-price %}
+      <div class="instead-of-price">
+        <p>
+          {{ plan.instead-of-price }}
+        </p>
+      </div>
+    {% endif %}
+    
     
     <div class="features">
       <ul>

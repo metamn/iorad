@@ -16,9 +16,17 @@
   }
   
   .price {
-    span {
-      @include colors(green-on-darkblue);
+    .usd {
+      @include circle-with-text($gutter * 2);
+      @include colors(darkblue-on-green);
       @include font(highlight);
+      
+      position: relative;
+      top: -$gutter / 2;
+      
+      span {
+        top: $gutter / 2;
+      }
     }
   }
   
@@ -31,6 +39,22 @@
       
       li {
         span {
+          &.feature {
+            &:after {
+              content: '?';
+              margin-left: $gutter / 2;
+              @include color($green);
+              font-size: smaller;
+              
+              // On mobile the question mark is too big, and sometimes is put alone in a new line
+              @include portrait {
+                margin-left: 2px;
+              }
+              
+              cursor: pointer;
+            }
+          }
+          
           &.feature-description {
             display: none;
           }
@@ -70,8 +94,11 @@
   // Billing is missing, so we make all plans equal height on desktops
   &#enterprise {
     @include landscape {
-      .button {
+      .features {
         margin-top: $gutter * 3 - $gutter / 4;
+      }
+      .button {
+        margin-top: $gutter * 2 + $gutter / 2;
       }
     }
   }
