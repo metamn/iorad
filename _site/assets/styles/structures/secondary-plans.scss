@@ -22,16 +22,3 @@
 }
 
 
-
-@mixin secondary-plan-container {
-  @include portrait {
-    margin-top: $gutter * 2;
-    @include padding($padding: $gutter);
-  }
-  
-  @include landscape {
-    margin-top: $gutter * 3;
-    @include padding($padding: 10%);
-  }
-}
-

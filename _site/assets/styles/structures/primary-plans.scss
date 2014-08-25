@@ -29,6 +29,10 @@
   
   @include landscape {
     margin-top: $gutter * 3;
+    @include padding($padding: 1%);
+  }
+  
+  @include large-screen-and-up {
     @include padding($padding: 10%);
   }
 }
