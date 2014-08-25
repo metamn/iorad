@@ -9,8 +9,8 @@
     
     position: relative;
     
-    @include colors(white-on-blue);
-    @include primary-plan($lightblue, blue-on-green);
+    border: 1px solid $blue;
+    @include primary-plan;
   }
 }
 

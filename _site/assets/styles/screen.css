@@ -60,25 +60,25 @@ html.pricing body #pricing #all-plans .container ul li span.checkmark img { max-
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans { margin-top: 2.5em; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 0px); }
   html.pricing body #pricing #primary-plans article.popular { margin-top: 1.25em; } }
 @media only screen and (min-width: 64em) { html.pricing body #pricing #primary-plans { margin-top: 3.75em; padding-left: 10%; padding-right: 10%; width: calc(100% - 20% - 0px); } }
-html.pricing body #pricing #primary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(31.5% - 2.5em - 2px); margin-right: 2.5%; margin-bottom: 2.5em; padding: 1.25em; position: relative; color: white; background-color: #2f456c; }
+html.pricing body #pricing #primary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(31.5% - 2.5em - 2px); margin-right: 2.5%; margin-bottom: 2.5em; padding: 1.25em; position: relative; border: 1px solid #2f456c; }
 html.pricing body #pricing #primary-plans article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html.pricing body #pricing #primary-plans article:last-of-type { margin-right: 0; }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article { padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 2px); margin-right: 0; } }
 html.pricing body #pricing #primary-plans article .title h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #pricing #primary-plans article .subtitle p { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-style: italic; }
 html.pricing body #pricing #primary-plans article .users { margin: 1.25em 0; }
-html.pricing body #pricing #primary-plans article .users .selectbox { border: 1px solid #276497; background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%; width: 70%; margin: 0 15%; overflow: hidden; }
+html.pricing body #pricing #primary-plans article .users .selectbox { border: 1px solid #2f456c; background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%; width: 70%; margin: 0 15%; overflow: hidden; }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article .users .selectbox { background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-medium.png") no-repeat 99% 50%; } }
 html.pricing body #pricing #primary-plans article .users .selectbox select { color: white; background-color: #162746; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 100%; padding: 5px 8px; width: 130%; border: none; box-shadow: none; background: transparent; background-image: none; -webkit-appearance: none; }
-html.pricing body #pricing #primary-plans article .price .usd { width: 2.5em; height: 2.5em; -webkit-border-radius: 2.5em; -moz-border-radius: 2.5em; -ms-border-radius: 2.5em; -o-border-radius: 2.5em; border-radius: 2.5em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #2f456c; background-color: #00ba75; font-size: 1.3077em; border: none; position: relative; top: -0.625em; }
+html.pricing body #pricing #primary-plans article .price .usd { width: 2.5em; height: 2.5em; -webkit-border-radius: 2.5em; -moz-border-radius: 2.5em; -ms-border-radius: 2.5em; -o-border-radius: 2.5em; border-radius: 2.5em; border: 2px solid; display: inline-block; text-align: center; font-size: smaller; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #162746; background-color: #00ba75; font-size: 1.3077em; border: none; position: relative; top: -0.625em; }
 html.pricing body #pricing #primary-plans article .price .usd span { position: relative; top: 0.83333em; }
 html.pricing body #pricing #primary-plans article .price .usd span { top: 0.625em; }
 html.pricing body #pricing #primary-plans article .instead-of-price { margin-top: 1.25em; }
-html.pricing body #pricing #primary-plans article .instead-of-price p { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: smaller; text-transform: uppercase; letter-spacing: 0.10417em; color: #2f456c; background-color: #00ba75; font-size: 1.3077em; font-size: 100%; border: none; }
+html.pricing body #pricing #primary-plans article .instead-of-price p { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: smaller; text-transform: uppercase; letter-spacing: 0.10417em; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-size: 100%; border: none; }
 html.pricing body #pricing #primary-plans article .instead-of-price p a { text-decoration: none; }
 html.pricing body #pricing #primary-plans article .features { margin-top: 1.25em; }
 html.pricing body #pricing #primary-plans article .features ul { font-family: 'Source Sans Pro', sans-serif; font-weight: 400; }
-html.pricing body #pricing #primary-plans article .features ul li { margin-bottom: 0.3125em; padding-bottom: 0.3125em; border-bottom: 1px solid #276497; }
+html.pricing body #pricing #primary-plans article .features ul li { margin-bottom: 0.3125em; padding-bottom: 0.3125em; border-bottom: 1px solid #2f456c; }
 html.pricing body #pricing #primary-plans article .features ul li span.feature.with-description:after { content: url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-small.png"); margin-left: 0.625em; position: relative; top: 2px; cursor: pointer; }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article .features ul li span.feature.with-description:after { margin-left: 0px; top: 0.3125em; } }
 html.pricing body #pricing #primary-plans article .features ul li span.feature-description { display: none; }
@@ -94,7 +94,7 @@ html.pricing body #pricing #primary-plans article .popular { width: 100%; float:
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans { margin-top: 2.5em; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 0px); }
   html.pricing body #pricing #secondary-plans article.popular { margin-top: 1.25em; } }
 @media only screen and (min-width: 64em) { html.pricing body #pricing #secondary-plans { margin-top: 3.75em; padding-left: 10%; padding-right: 10%; width: calc(100% - 20% - 0px); } }
-html.pricing body #pricing #secondary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(48.7% - 2.5em - 2px); margin-right: 2.5%; margin-bottom: 2.5em; border: 1px solid #2f456c; padding: 1.25em; position: relative; }
+html.pricing body #pricing #secondary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(48.7% - 2.5em - 2px); margin-right: 2.5%; margin-bottom: 2.5em; padding: 1.25em; position: relative; border: 1px solid #2f456c; }
 html.pricing body #pricing #secondary-plans article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html.pricing body #pricing #secondary-plans article:last-of-type { margin-right: 0; }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans article { padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 2px); margin-right: 0; } }
@@ -126,16 +126,17 @@ html.pricing body #pricing #secondary-plans article .popular { width: 100%; floa
   html.pricing body #pricing #secondary-plans article#enterprise .instead-of-price .instead-of-price p { margin-top: 1.5625em; }
   html.pricing body #pricing #secondary-plans article#enterprise .button { margin-top: 3.125em; } }
 html.pricing body #pricing #secondary-plans article .container > h3 { display: none; }
-html.pricing body #faq { text-align: center; margin: 2.5em 0; }
-html.pricing body #faq h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; font-size: 1.6154em; text-transform: uppercase; letter-spacing: 0.10417em; line-height: 1; }
+html.pricing body #faq { text-align: center; margin: 2.5em 0 0; color: white; background-color: #2f456c; padding-top: 2.5em; }
 html.pricing body #faq .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }
+html.pricing body #faq h2 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; font-size: 1.6154em; text-transform: uppercase; letter-spacing: 0.10417em; line-height: 1; }
 html.pricing body #faq .container article { margin-top: 2.5em; text-align: center; }
 html.pricing body #faq .container article > h3 { display: block; }
 html.pricing body #faq .container article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html.pricing body #faq .container article .container { max-width: 31.25em; }
 html.pricing body #faq .container article .container h3 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #faq .container article .container p { margin-top: 1.25em; }
-@media only screen and (min-width: 64em) { html.pricing body #faq .container article .container:after { content: ' '; display: inline-block; border-bottom: 1px solid #2f456c; margin-top: 2.5em; margin-bottom: 1.25em; width: 30%; } }
+@media only screen and (min-width: 64em) { html.pricing body #faq .container article .container:after { content: '\00b0'; color: #999999; background-color: transparent; display: inline-block; margin-top: 2.5em; margin-bottom: 1.25em; }
+  html.pricing body #faq .container article .container:after a { color: #999999; background-color: transparent; } }
 
 #gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
 #gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }

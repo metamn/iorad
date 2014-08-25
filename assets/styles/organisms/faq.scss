@@ -1,4 +1,4 @@
-@mixin faq {
+@mixin faq($color) {
   article {
     @include show-title;
     margin-top: $gutter * 2;
@@ -17,7 +17,7 @@
       }
       
       @include landscape {
-        @include faq-border;
+        @include faq-border($color);
       }
     }
     
@@ -25,13 +25,12 @@
 }
 
 
-@mixin faq-border {
+@mixin faq-border($color) {
   &:after {
-    content: ' ';
+    content: '\00b0';
+    @include color($color);
     display: inline-block;
-    border-bottom: 1px solid $blue;
     margin-top: $gutter * 2;
     margin-bottom: $gutter;
-    width: 30%;
   }
 } 
