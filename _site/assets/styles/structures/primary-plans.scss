@@ -22,7 +22,7 @@
     @include padding($padding: $gutter);
     
     article.popular {
-      margin-top: $gutter * 2;
+      margin-top: $gutter;
     }
   }
   

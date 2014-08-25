@@ -37,12 +37,14 @@
     @include features($border);
   }
   
+  
   .billed {
     margin-top: $gutter;
     p {
       @include font(subtitle);
     }
   }
+  
   
   .button {
     margin-top: $gutter;
@@ -51,6 +53,7 @@
       @include button;
     }
   }
+  
   
   .popular {
     @include most-popular;
