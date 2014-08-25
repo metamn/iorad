@@ -1,7 +1,7 @@
 @mixin most-popular {
   @include block;
   position: absolute;
-  top: calc(#{-$gutter} - 0px);
+  top: -$gutter - $gutter / 4;
   left: 0;
 
   @include colors(darkblue-on-green);

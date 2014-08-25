@@ -37,7 +37,7 @@ html body .portrait { display: none; }
   html body .portrait { display: block; } }
 html body section, html body article, html body nav, html body header, html body footer, html body aside { width: 100%; float: left; }
 html body section > h3, html body article > h3, html body nav > h3, html body header > h3, html body footer > h3, html body aside > h3 { display: none; }
-html body header { text-align: center; height: 2.5em; color: white; background-color: #276497; font-size: 1.3077em; }
+html body header { text-align: center; height: 2.5em; color: white; background-color: #276497; }
 html body header .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 
 html.pricing body #pricing #title { text-align: center; margin: 2.5em 0; }
@@ -60,7 +60,7 @@ html.pricing body #pricing #all-plans .container ul li span.checkmark img { max-
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans { margin-top: 2.5em; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 0px); }
   html.pricing body #pricing #primary-plans article.popular { margin-top: 1.25em; } }
 @media only screen and (min-width: 64em) { html.pricing body #pricing #primary-plans { margin-top: 3.75em; padding-left: 10%; padding-right: 10%; width: calc(100% - 20% - 0px); } }
-html.pricing body #pricing #primary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(30% - 2.5em - 2px); margin-right: 5%; margin-bottom: 2.5em; padding: 1.25em; position: relative; color: white; background-color: #2f456c; }
+html.pricing body #pricing #primary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(31.5% - 2.5em - 2px); margin-right: 2.5%; margin-bottom: 2.5em; padding: 1.25em; position: relative; color: white; background-color: #2f456c; }
 html.pricing body #pricing #primary-plans article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html.pricing body #pricing #primary-plans article:last-of-type { margin-right: 0; }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #primary-plans article { padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 2px); margin-right: 0; } }
@@ -87,14 +87,14 @@ html.pricing body #pricing #primary-plans article .billed p { font-family: 'Sour
 html.pricing body #pricing #primary-plans article .button { margin-top: 1.25em; }
 html.pricing body #pricing #primary-plans article .button p { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: smaller; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #pricing #primary-plans article .button p a { text-decoration: none; }
-html.pricing body #pricing #primary-plans article .popular { width: 100%; float: left; position: absolute; top: calc(-1.25em - 0px); left: 0; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; font-size: 100%; padding: 0.3125em 0; }
+html.pricing body #pricing #primary-plans article .popular { width: 100%; float: left; position: absolute; top: -1.5625em; left: 0; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; font-size: 100%; padding: 0.3125em 0; }
 @media only screen and (min-width: 64em) { html.pricing body #pricing #primary-plans article#enterprise .instead-of-price { width: 100%; float: left; height: 7.5em; }
   html.pricing body #pricing #primary-plans article#enterprise .instead-of-price .instead-of-price p { margin-top: 1.5625em; }
   html.pricing body #pricing #primary-plans article#enterprise .button { margin-top: 3.125em; } }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans { margin-top: 2.5em; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 0px); }
   html.pricing body #pricing #secondary-plans article.popular { margin-top: 1.25em; } }
 @media only screen and (min-width: 64em) { html.pricing body #pricing #secondary-plans { margin-top: 3.75em; padding-left: 10%; padding-right: 10%; width: calc(100% - 20% - 0px); } }
-html.pricing body #pricing #secondary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(47.5% - 2.5em - 2px); margin-right: 5%; margin-bottom: 2.5em; border: 1px solid #2f456c; padding: 1.25em; position: relative; }
+html.pricing body #pricing #secondary-plans article { text-align: center; float: left; padding-left: 1.25em; padding-right: 1.25em; width: calc(48.7% - 2.5em - 2px); margin-right: 2.5%; margin-bottom: 2.5em; border: 1px solid #2f456c; padding: 1.25em; position: relative; }
 html.pricing body #pricing #secondary-plans article .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html.pricing body #pricing #secondary-plans article:last-of-type { margin-right: 0; }
 @media only screen and (max-width: 63.999em) { html.pricing body #pricing #secondary-plans article { padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em - 2px); margin-right: 0; } }
@@ -121,7 +121,7 @@ html.pricing body #pricing #secondary-plans article .billed p { font-family: 'So
 html.pricing body #pricing #secondary-plans article .button { margin-top: 1.25em; }
 html.pricing body #pricing #secondary-plans article .button p { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; display: inline-block; cursor: pointer; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; font-size: smaller; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #pricing #secondary-plans article .button p a { text-decoration: none; }
-html.pricing body #pricing #secondary-plans article .popular { width: 100%; float: left; position: absolute; top: calc(-1.25em - 0px); left: 0; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; font-size: 100%; padding: 0.3125em 0; }
+html.pricing body #pricing #secondary-plans article .popular { width: 100%; float: left; position: absolute; top: -1.5625em; left: 0; color: #162746; background-color: #00ba75; font-size: 1.3077em; font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; font-size: 100%; padding: 0.3125em 0; }
 @media only screen and (min-width: 64em) { html.pricing body #pricing #secondary-plans article#enterprise .instead-of-price { width: 100%; float: left; height: 7.5em; }
   html.pricing body #pricing #secondary-plans article#enterprise .instead-of-price .instead-of-price p { margin-top: 1.5625em; }
   html.pricing body #pricing #secondary-plans article#enterprise .button { margin-top: 3.125em; } }

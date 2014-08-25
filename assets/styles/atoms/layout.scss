@@ -2,11 +2,11 @@
   float: left;
   
   @if ($cols == 3) {
-    @include padding(30%, $padding, $border);
-    margin-right: 5%;
+    @include padding(31.5%, $padding, $border);
+    margin-right: 2.5%;
   } @elseif ($cols == 2) {
-    @include padding(47.5%, $padding, $border);
-    margin-right: 5%;
+    @include padding(48.7%, $padding, $border);
+    margin-right: 2.5%;
   }
 
   &:last-of-type {

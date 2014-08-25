@@ -32,7 +32,6 @@ $black: black;
   } @elseif ($combination == white-on-lightblue) {
     color: $white;
     background-color: $lightblue;
-    font-size: $heading-level-1;
     
   } @elseif ($combination == green-on-darkblue) {
     color: $green;
