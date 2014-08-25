@@ -16,6 +16,12 @@ $breakpoint-large-screen: 90em; // 1440px
   }
 }
 
+@mixin normal-screen {
+  @media only screen and (width: $breakpoint-normal-screen) {
+    @content
+  }
+}
+
 @mixin landscape {
   @media only screen and (min-width: $breakpoint-normal-screen) {
     @content

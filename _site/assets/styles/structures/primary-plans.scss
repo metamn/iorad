@@ -3,11 +3,16 @@
   
   article {
     @include center($text-width);
-    @include symmetric-grid(3, $gutter, 1px);
     margin-bottom: $gutter * 2;
+    position: relative;
+    
+    @include symmetric-grid(3, $gutter, 1px);
     padding: $gutter;
     
-    position: relative;
+    @include normal-screen {
+      @include symmetric-grid(3, 0em, 1px);
+      padding: $gutter 0;
+    }
     
     border: 1px solid $lightblue;
     @include primary-plan($lightblue);
