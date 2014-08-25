@@ -3,14 +3,19 @@
   
   article {
     @include center($text-width);
-    @include symmetric-grid(3, $gutter, 1px);
     margin-bottom: $gutter * 2;
-    padding: $gutter;
-    
     position: relative;
     
-    border: 1px solid $blue;
-    @include primary-plan;
+    @include symmetric-grid(3, $gutter, 1px);
+    padding: $gutter;
+    
+    @include normal-screen {
+      @include symmetric-grid(3, 0em, 1px);
+      padding: $gutter 0;
+    }
+    
+    border: 1px solid $lightblue;
+    @include primary-plan($lightblue);
     
   }
 }
@@ -29,6 +34,10 @@
   
   @include landscape {
     margin-top: $gutter * 3;
+    @include padding($padding: 1%);
+  }
+  
+  @include large-screen-and-up {
     @include padding($padding: 10%);
   }
 }

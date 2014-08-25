@@ -17,6 +17,12 @@
     @include padding(100%, $padding, $border);
     margin-right: 0;
   }
+  
+  @include tablet {
+    @include padding(70%, $padding, $border);
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 

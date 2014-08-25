@@ -7,21 +7,11 @@
     </p> 
     
     <ul>
-      <li>
-        {% include atoms/text-with-icon.html icon="icon-checkmark-green" text="Unlimited private tutorials" %}
-      </li>
-      
-      <li>
-        {% include atoms/text-with-icon.html icon="icon-checkmark-green" text="Export to docx / pptx right before that dreadful meeting" %}
-      </li>
-      
-      <li>
-        {% include atoms/text-with-icon.html icon="icon-checkmark-green" text="Handy dandy data masker to hide sensitive info on screenshots" %}
-      </li>
-      
-      <li>
-        {% include atoms/text-with-icon.html icon="icon-checkmark-green" text="Pure awesomeness" %}
-      </li>
+      {% for plan in page.all-plans %}
+        <li>
+          {% include atoms/text-with-icon.html icon="icon-checkmark-green" text=plan.title %}
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </article>
