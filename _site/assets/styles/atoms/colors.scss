@@ -43,6 +43,11 @@ $black: black;
     color: $darkblue;
     background-color: $green;
     font-size: $heading-level-1;
+  
+  } @elseif ($combination == blue-on-green) {
+    color: $blue;
+    background-color: $green;
+    font-size: $heading-level-1;
   }
 }
 

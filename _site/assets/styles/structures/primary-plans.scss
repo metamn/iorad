@@ -5,12 +5,12 @@
     @include center($text-width);
     @include symmetric-grid(3, $gutter, 1px);
     margin-bottom: $gutter * 2;
-    
-    border: 1px solid $blue;
     padding: $gutter;
     
     position: relative;
-    @include primary-plan;
+    
+    @include colors(white-on-blue);
+    @include primary-plan($lightblue, blue-on-green);
   }
 }
 
