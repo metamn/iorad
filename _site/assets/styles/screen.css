@@ -40,11 +40,11 @@ html body section > h3, html body article > h3, html body nav > h3, html body he
 html body header { text-align: center; height: 2.5em; color: white; background-color: #276497; }
 html body header .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 
-html.pricing body #pricing #title { text-align: center; margin: 2.5em 0; }
+html.pricing body #pricing #title { text-align: center; margin: 2.5em 0 0; }
 html.pricing body #pricing #title .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }
 html.pricing body #pricing #title .container h1 { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; font-size: 1.6154em; text-transform: uppercase; letter-spacing: 0.10417em; line-height: 1; }
 html.pricing body #pricing #title .container p { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-style: italic; margin-top: 1.25em; }
-html.pricing body #pricing #all-plans { text-align: center; }
+html.pricing body #pricing #all-plans { text-align: center; margin: 2.5em 0; }
 html.pricing body #pricing #all-plans .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
 html.pricing body #pricing #all-plans .container p { font-family: 'Source Sans Pro', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.10417em; }
 html.pricing body #pricing #all-plans .container ul { margin-top: 1.25em; /*

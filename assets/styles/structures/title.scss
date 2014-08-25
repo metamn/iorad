@@ -1,6 +1,6 @@
 @mixin title {
   @include center($text-width * 2);
-  margin: $gutter * 2 0;
+  margin: $gutter * 2 0 0;
   
   .container {
     h1 {
