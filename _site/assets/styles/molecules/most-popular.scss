@@ -1,11 +1,12 @@
 @mixin most-popular {
   @include block;
   position: absolute;
-  top: -$gutter - $gutter / 4;
-  left: 0;
+  top: calc(-#{$gutter} - #{$gutter / 2} - 2px);
+  left: -1px;
 
   @include colors(darkblue-on-green);
   @include font(box-title);
   font-size: 100%;
   padding: $gutter / 4 0;
+  border: 1px solid $green;
 }

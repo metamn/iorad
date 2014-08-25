@@ -9,8 +9,8 @@
     
     position: relative;
     
-    border: 1px solid $blue;
-    @include primary-plan;
+    border: 1px solid $lightblue;
+    @include primary-plan($lightblue);
     
   }
 }

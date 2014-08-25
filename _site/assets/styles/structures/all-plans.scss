@@ -1,5 +1,6 @@
 @mixin all-plans {
   @include center($text-width);
+  margin: $gutter * 2 0;
   
   .container {
     p {

@@ -1,12 +1,13 @@
 @mixin faqs {
   @include center($text-width * 2);
-  margin: $gutter * 2 0 0;
+  margin: $gutter * 3 0 0;
   
   @include colors(white-on-blue);
   padding-top: $gutter * 2;
   
   h2 {
     @include font(title);
+    margin-bottom: $gutter;
   }
   
   .container {
