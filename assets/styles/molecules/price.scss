@@ -1,8 +1,8 @@
-@mixin price {
+@mixin price($scheme) {
   .usd {
     @include circle-with-text($gutter * 2);
-    @include colors(darkblue-on-green);
     @include font(highlight);
+    @include colors($scheme);
     border: none;
 
     position: relative;

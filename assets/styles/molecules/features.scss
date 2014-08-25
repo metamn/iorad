@@ -1,8 +1,8 @@
-@mixin features {
+@mixin features($border) {
   margin-top: $gutter;
     
   ul {
-    @include list-underlined;
+    @include list-underlined($color: $border);
     @include font(highlight);
 
     li {

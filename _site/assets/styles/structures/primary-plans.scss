@@ -5,12 +5,13 @@
     @include center($text-width);
     @include symmetric-grid(3, $gutter, 1px);
     margin-bottom: $gutter * 2;
-    
-    border: 1px solid $blue;
     padding: $gutter;
     
     position: relative;
+    
+    border: 1px solid $blue;
     @include primary-plan;
+    
   }
 }
 
@@ -22,7 +23,7 @@
     @include padding($padding: $gutter);
     
     article.popular {
-      margin-top: $gutter * 2;
+      margin-top: $gutter;
     }
   }
   

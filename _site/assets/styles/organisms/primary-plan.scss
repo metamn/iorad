@@ -1,4 +1,4 @@
-@mixin primary-plan {
+@mixin primary-plan($border: $blue, $scheme: darkblue-on-green) {
   .title {
     h2 {
       @include font(box-title);
@@ -12,12 +12,12 @@
   }
   
   .users {
-    @include users;
+    @include users($border);
   }
   
   
   .price {
-    @include price;
+    @include price($scheme);
   }
   
 
@@ -26,15 +26,17 @@
     
     p {
       @include button;
-      @include colors(darkblue-on-green);
+      @include colors($scheme);
       font-size: 100%;
+      border: none;
     }
   }
   
 
   .features {
-    @include features;
+    @include features($border);
   }
+  
   
   .billed {
     margin-top: $gutter;
@@ -43,6 +45,7 @@
     }
   }
   
+  
   .button {
     margin-top: $gutter;
     
@@ -50,6 +53,7 @@
       @include button;
     }
   }
+  
   
   .popular {
     @include most-popular;

@@ -1,8 +1,8 @@
-@mixin users {
+@mixin users($border) {
   margin: $gutter 0;
     
   .selectbox {
-    border: 1px solid $blue;
+    border: 1px solid $border;
     background: transparent url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%;
     
     @include portrait {

@@ -32,7 +32,6 @@ $black: black;
   } @elseif ($combination == white-on-lightblue) {
     color: $white;
     background-color: $lightblue;
-    font-size: $heading-level-1;
     
   } @elseif ($combination == green-on-darkblue) {
     color: $green;
@@ -41,6 +40,11 @@ $black: black;
   
   } @elseif ($combination == darkblue-on-green) {
     color: $darkblue;
+    background-color: $green;
+    font-size: $heading-level-1;
+  
+  } @elseif ($combination == blue-on-green) {
+    color: $blue;
     background-color: $green;
     font-size: $heading-level-1;
   }
