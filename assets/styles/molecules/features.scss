@@ -7,33 +7,7 @@
     @include font(highlight);
 
     li {
-      span {
-        &.feature.with-description {
-          &:after {
-            content: url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-small.png");
-            margin-left: $gutter / 2;
-            
-            position: relative;
-            top: 2px;
-
-            // On mobile the question mark is too big, and sometimes is put alone in a new line
-            @include portrait {
-              margin-left: 0px;
-              top: $gutter / 4;
-            }
-
-            cursor: pointer;
-          }
-        }
-
-        &.feature-description {
-          display: none;
-        }
-        
-        &.feature.not-included {
-          text-decoration: line-through;
-        }
-      }
+      @include tooltip;
     }
   }
 }

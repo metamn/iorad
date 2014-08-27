@@ -22,6 +22,8 @@
       @include font(highlight);
       
       li {
+        @include tooltip;
+        
         span {
           &.checkmark {
             margin-left: $gutter / 2;
