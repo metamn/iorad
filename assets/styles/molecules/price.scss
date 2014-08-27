@@ -1,4 +1,7 @@
 @mixin price($scheme) {
+  @include block;
+  margin-top: $gutter * 2;
+  
   .usd {
     @include circle-with-text($gutter * 2);
     @include font(highlight);

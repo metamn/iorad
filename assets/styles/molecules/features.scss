@@ -1,5 +1,6 @@
 @mixin features($border) {
-  margin-top: $gutter;
+  @include block;
+  margin-top: $gutter * 2;
     
   ul {
     @include list-underlined($color: $border);
