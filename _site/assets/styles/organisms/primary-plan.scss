@@ -52,12 +52,10 @@
     @include most-popular;
   }
   
-  &#team {
-    position: relative;
-    
-    .price, .features, .billed, .button {
-      position: relative;
-      top: - $gutter - $gutter / 2;
+  &#individual {
+    .price {
+      @include block;
+      margin-top: $gutter * 2;
     }
     
   }
