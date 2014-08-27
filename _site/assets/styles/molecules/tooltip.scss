@@ -40,7 +40,15 @@
         position: relative;
         top: 3px;
         
+        @include portrait {
+          top: $gutter / 8;
+        }
+        
       }
+    }
+  
+    p {
+      margin-bottom: $gutter;
     }
   }
 }
