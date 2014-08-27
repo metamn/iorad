@@ -49,6 +49,10 @@
     article {
       margin-bottom: $gutter * 3;
       
+      &:first-of-type {
+        margin-top: $gutter * 2;
+      }
+      
       &.popular {
         margin-bottom: $gutter * 2;
       }
