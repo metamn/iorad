@@ -1,78 +1,35 @@
 $(document).ready(function() {
   
-  
-  // CMS
-  // - the slider
-  
-  $('#slider-for-cms .slide').swipe({
-    swipeLeft:function(event) {
-      var index = $('#slider-for-cms .slide').index(this) + 1;
-      swipeLeft(index); 
-    },
-    swipeRight:function(event) {
-      var index = $('#slider-for-cms .slide').index(this) + 1;
-      swipeRight(index); 
-    },
-    threshold: 0
-  });
-  
-  function swipeLeft(index) {
-    if (index == 4) { index = 0 }
-    
-    $('#slider-for-cms').removeClass();
-    $('#slider-for-cms').addClass('left-' + index);
-  }
-  
-  function swipeRight(index) {
-    if (index == 1) { index = 5 }
-    
-    $('#slider-for-cms').removeClass();
-    $('#slider-for-cms').addClass('right-' + index);
-  }
-  
-  
-  
-  
-  // UX
-  // - split sentence into words
-  $('#slider #ux p').blast({ delimiter: "word" });
-  
-  // - reveal words on click
-  $('#slider #ux p span').click(function() {
-    changeClass($(this));
-    checkCompletion();
-  });
-  
-  // - reveal words on hover
-  $('#slider #ux p span').hover(
+  // Tooltips
+  // - on desktops
+  $('.feature').hover(
     function() {
-      changeClass($(this));
-      checkCompletion();
+      showTooltip($(this));
     }, function() {
-      // do nothing on exit
+      hideTooltip($(this));
     }
   );
   
-  function changeClass(item) {
-    item.addClass('active');
-  }
-  
-  // - final effect when all words revealed
-  function checkCompletion() {
-    var count = $('#slider #ux p span').not('.active').length;
-    if (count == 0) {
-      $('#slider #ux p').addClass('done');
-    }
-  }
-  
-  
-  // Values
-  // - the Slider 
-  $('#slider .slide').first().addClass('active');
-  $('#skills ul li').click(function() {
-    var index = $('#skills ul li').index(this);
-    $('#slider .slide').removeClass('active');
-    $("#slider .slide:eq(" + index + ")").addClass('active');
+  // - on touch
+  $('.feature').click(function() {
+    var tooltip = item.next('.feature-description').length ? item.next('.feature-description') : item.children('.feature-description');
+    tooltip.toggleClass('active');
   });
+  
+  // - close
+  $('.feature-description .close').click(function() {
+    $(this).parent().removeClass('active');
+  });
+  
+  
+  function showTooltip(item) {
+    var tooltip = item.next('.feature-description').length ? item.next('.feature-description') : item.children('.feature-description');
+    tooltip.addClass('active');
+  }
+  
+  function hideTooltip(item) {
+    var tooltip = item.next('.feature-description').length ? item.next('.feature-description') : item.children('.feature-description');
+    tooltip.removeClass('active');
+  }
 });
 

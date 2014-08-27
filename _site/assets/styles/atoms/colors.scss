@@ -28,6 +28,10 @@ $black: black;
   } @elseif ($combination == white-on-blue) {
     color: $white;
     background-color: $blue;
+      
+  } @elseif ($combination == white-on-black) {
+    color: $white;
+    background-color: $black;
     
   } @elseif ($combination == white-on-lightblue) {
     color: $white;

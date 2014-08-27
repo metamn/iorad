@@ -1,5 +1,41 @@
 @mixin tooltip {
+  cursor: help;
+  
   .feature-description {
+    text-align: center;
+    @include colors(white-on-lightblue);
+    
+    padding: $gutter;
+    max-width: calc(18em - #{$gutter * 2});
+    
+    position: absolute;
+    z-index: 100;
+  
+    cursor: default;
+  
+    
     display: none;
+    &.active {
+      display: block;
+    }
+  
+    .close {
+      @include block;
+      padding: $gutter 0 0;
+      @include font(secondary-subtitle);
+      
+      cursor: pointer;
+      
+      &:after {
+        content: '\2715';
+        display: inline-block;
+        margin-left: $gutter / 4;
+        @include color($green);
+        
+        position: relative;
+        top: 3px;
+        
+      }
+    }
   }
 }
