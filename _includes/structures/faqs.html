@@ -2,7 +2,7 @@
   <h2>Frequently Asked Questions</h2>
   
   <div class="container">
-    {% for faq in page.faqs %}
+    {% for faq in site.data.pricing.faqs %}
       {% include organisms/faq.html id=forloop.index %}
     {% endfor %}
   </div>

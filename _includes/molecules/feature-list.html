@@ -1,0 +1,20 @@
+{% for feature in include.features %}
+  {% if feature.description %}
+    {% assign klass = 'with-description' %}
+  {% else %}
+    {% assign klass = 'no-description' %}
+  {% endif %}
+
+  <li class="{{ include.class }}">
+    <span class="feature {{ class }} {% include atoms/classname.html title=klass %}">
+      {{ feature.title }}
+    </span>
+
+    {% if feature.description %}
+      <span class="feature-description">
+        {{ feature.description }}
+        <span class="close">close</span>
+      </span>
+    {% endif %}
+  </li>
+{% endfor %}

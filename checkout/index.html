@@ -1,11 +1,8 @@
 ---
 layout: default
-title: The Premium Private Plans
-subtitle: No obligations. Cancel, upgrade, downgrade anytime 
+title: Checkout
+subtitle: You've choosen the XXX plan
 ---
-
-
-
 
 
 <header class="bottom-shadow animated" id="header">
@@ -20,13 +17,12 @@ subtitle: No obligations. Cancel, upgrade, downgrade anytime
 
 
 <!-- my code starts here -->
-<section id="pricing">
+<section id="checkout">
   <h3>Pricing</h3>
   {% include structures/title.html %}
-  {% include structures/all-plans.html %}
   
-  {% include structures/primary-plans.html %}
-  {% include structures/secondary-plans.html %}
+  {% include structures/primary-plans.html checkout="true" %}
+  {% include structures/secondary-plans.html checkout="true" %}
 </section>
 
 {% include structures/faqs.html %}

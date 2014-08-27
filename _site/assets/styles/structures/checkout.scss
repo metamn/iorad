@@ -1,0 +1,93 @@
+@mixin checkout {
+  @include checkout-plan-container;
+  @include reset-plan-margins;
+  @include hide-unused-plans;
+  @include all-features;
+}
+
+
+
+
+
+
+@mixin all-features {
+  #secondary-plans {
+    .secondary-plan {
+      .features {
+        ul {
+          li {
+            &.strikethrough {
+              .feature {
+                text-decoration: line-through;
+              }
+            }  
+            
+            // Hide the duplicated "Data Masker Tool"
+            &:nth-of-type(5) {
+              display: none;
+            }   
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@mixin hide-unused-plans {
+  #enterprise, #free-plan {
+    display: none;
+  }
+}
+
+
+
+@mixin reset-plan-margins {
+  #primary-plans, #secondary-plans {
+    margin-top: 0;
+    
+    article {
+      margin-bottom: $gutter * 3;
+      
+      &.popular {
+        margin-bottom: $gutter * 2;
+      }
+    }
+  }
+}
+
+
+
+@mixin checkout-plan-container {
+  #primary-plans, #secondary-plans {
+    
+    // All plans will have the same width
+    // - inherited from Pricing
+    article {
+      @include symmetric-grid(3, $gutter, 1px);
+      padding: $gutter;
+
+      @include normal-screen {
+        @include symmetric-grid(3, 0em, 1px);
+        padding: $gutter 0;
+      }
+    }
+    
+    
+    // All plans will be centered also on desktops
+    // - this is the new code
+    @include landscape {
+      article {
+        $width: 31.5%;
+        $border: 1px;
+        margin-left: calc((100% - #{$width}  - #{$border * 2}) / 2);
+
+        @include normal-screen {
+          $width: 31.5%;
+          $border: 1px;
+          margin-left: calc((100% - #{$width} - #{$border * 2}) / 2);
+        }
+      }
+    }
+  }
+}

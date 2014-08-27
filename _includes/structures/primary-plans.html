@@ -1,7 +1,7 @@
 <aside id="primary-plans">
   <h3>Primary Plans</h3>
 
-  {% for plan in page.plans %}
-    {% include organisms/primary-plan.html id=forloop.index %}
+  {% for plan in site.data.pricing.plans %}
+    {% include organisms/primary-plan.html id=forloop.index checkout=include.checkout %}
   {% endfor %}
 </aside>

@@ -1,0 +1,94 @@
+all-plans:
+  - title: Unlimited private tutorials
+    description: <p>LAUNCH SPECIAL – Expires October 10th, 2014</p>We are rewarding our first users with unlimited private tutorials. After the expiration date we’ll put some caps on the number of tutorials for each plan.
+  - title: Export to Word / Powerpoint
+    description: If you like an ole’ school step-by-step word doc or need a quick system walkthrough presentation for that project meeting… we got you covered!
+  - title: Data Masker Tool
+    description: Quickly edit screenshots to hide any sensitive information (Account Numbers, Contact info, etc)
+plans:
+  - title: Individual
+    subtitle: 1 user
+    price: 
+      - usd: 32
+        text: month
+    billed: Billed annually or $40 month-to-month
+    button: 
+      - title: Upgrade
+    features:
+      - title: 1 Custom Theme
+        description: You can brand the player with your own logo and skin. Each user gets their own theme so they can style their own player.
+  - title: Team
+    subtitle: 2-19 users
+    secondary-subtitle: multi-user discount&mdash;10% off the total
+    select: 
+      - max: 19
+        min: 2
+        text: users
+    price: 
+      - usd: 128
+        text: month
+    features:
+      - title: 2 Custom Themes
+        description: You can brand the player with your own logo and skin. Each user gets their own theme so they can style their own player.
+    billed: Billed annually or $160 month-to-month
+    button: 
+      - title: Upgrade 
+    class: popular
+  - title: Enterprise
+    subtitle: 20+ users
+    secondary-subtitle: for corporations, organizations and government
+    features:
+      - title: Unlimited Custom Themes
+        description: You can brand the player with your own logo and skin. Each user gets their own theme so they can style their own player.
+      - title: Host on your own server
+        description: Download a html zip package of your tutorial and host it on your sharepoint or web server
+      - title: Custom Domain
+        description: Description text needed here
+    button: 
+      - title: Contact Us
+free-plan:
+  - title: The Free Plan
+    subtitle: Unlimited Public Tutorials
+    secondary-subtitle: a short text here makes this height longer to fit the other plan
+    features:
+      - title: No privacy and custom logos 
+      - title: Just sharing my knowledge
+    button: 
+      - title: Subscribed
+        class: active
+one-timer-plan:
+  - subtitle: Not interested in monthly plans?
+    select: 
+      - max: 4
+        min: 1
+        text: tutorials
+    price: 
+      - usd: 18
+        text: tutorial
+    features:
+      - title: Pay by the tutorial
+      - title: Data Masker Tool
+        description: Quickly edit screenshots to hide any sensitive information (Account Numbers, Contact info, etc)
+    button: 
+      - title: One Timer Plan
+faqs:
+  - title: Example question?
+    answer: Example answer. 
+  - title: what is this question?
+    answer: What is this answer. 
+  - title: Why would I need a private tutorial?
+    answer: Private tutorials are mainly for those that don't want their stuff accessible by the world of the internet. All premium tutorials have full privacy controls. Only authorized people (those that you invite) will be allowed to view your tutorial.
+  - title: Can I host my premium tutorial on my own server or company website?
+    answer: But of course you can. As a premium subscriber you can download the HTML zip package of your tutorial and host it on your own server/website (as per our terms of service this is a single server license). The HTML zip package is optimized and accessible by mobile devices, tablets, and desktop computers. 
+  - title: What else do I get?
+    answer: You will be able to publish your tutorial as step by step word doc or powerpoint. If you rollover docx and pptx you will see a quick shot of what this looks like. 
+  - title: How can I cancel and what happens to my premium tutorials?
+    answer: If you cancel your account, all tutorials both public and private will be deleted immediately. You can go to your profile dropdown and select My Account and Delete Account. It's the last option. 
+  - title: Should I choose the yearly option?
+    answer: It's up to you. If you do decide to pay for the year up front, you'll get two months free. 
+  - title: What happens if I stop paying?
+    answer: Your account will remain active and you can continue making public tutorials for free like usual but all your premium tutorials will be locked from editing. To edit or download the files again, you'll have to catch up on your past due amount. 
+  - title: Questions before signing up?
+    answer: We're happy to answer any questions you have. Just drop us a note and we'll get right back to you. Shoot an email over to info@iorad.com or go to contact us page. Also, feel free to shout out on Twitter to @iorad. 
+  - title: Terms and Privacy Policies
+    answer: Read our Terms of Service and Privacy Policy.

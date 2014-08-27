@@ -14,5 +14,21 @@ html {
     header {
       @include header;
     }
+    
+    #title {
+      @include title;
+    }
+    
+    #primary-plans {
+      @include primary-plans;
+    }
+
+    #secondary-plans {
+      @include secondary-plans;
+    }
+    
+    #faq {
+      @include faqs;
+    }
   }
 }

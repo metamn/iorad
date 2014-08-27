@@ -1,0 +1,7 @@
+html.checkout {
+  body {
+    #checkout {
+      @include checkout;
+    }
+  }
+}
