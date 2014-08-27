@@ -7,7 +7,7 @@
     </p> 
     
     <ul>
-      {% for plan in page.all-plans %}
+      {% for plan in site.data.pricing.all-plans %}
         <li class="feature with-description">
           {% include atoms/text-with-icon.html icon="icon-checkmark-green" text=plan.title %}
           <span class="feature-description">
