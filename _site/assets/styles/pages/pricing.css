@@ -1,12 +1,12 @@
 /*
-Syntax error: Undefined mixin 'title'.
-        on line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss, in `title'
+Syntax error: Undefined mixin 'all-plans'.
+        on line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss, in `all-plans'
         from line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss
 
 1: /home/cs/work/iorad/assets/styles/pages/pricing.scss
 
 Backtrace:
-/home/cs/work/iorad/assets/styles/pages/pricing.scss:5:in `title'
+/home/cs/work/iorad/assets/styles/pages/pricing.scss:5:in `all-plans'
 /home/cs/work/iorad/assets/styles/pages/pricing.scss:5
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -112,4 +112,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'title'.\A         on line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss, in `title'\A         from line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss\A \A 1: /home/cs/work/iorad/assets/styles/pages/pricing.scss"; }
+  content: "Syntax error: Undefined mixin 'all-plans'.\A         on line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss, in `all-plans'\A         from line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss\A \A 1: /home/cs/work/iorad/assets/styles/pages/pricing.scss"; }

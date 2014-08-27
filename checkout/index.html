@@ -1,4 +1,28 @@
 ---
 layout: default
 title: Checkout
+subtitle: You've choosen the XXX plan
 ---
+
+
+<header class="bottom-shadow animated" id="header">
+  <div class="container">
+    &nbsp;
+  </div>
+</header>
+
+
+
+
+
+
+<!-- my code starts here -->
+<section id="checkout">
+  <h3>Pricing</h3>
+  {% include structures/title.html %}
+  
+  {% include structures/primary-plans.html checkout="true" %}
+  {% include structures/secondary-plans.html checkout="true" %}
+</section>
+
+{% include structures/faqs.html %}

@@ -1,24 +1,14 @@
 /*
-Syntax error: Undefined mixin 'all-plans'.
-        on line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss, in `all-plans'
-        from line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss
+Syntax error: Undefined mixin 'checkout'.
+        on line 4 of /home/cs/work/iorad/assets/styles/pages/checkout.scss, in `checkout'
+        from line 4 of /home/cs/work/iorad/assets/styles/pages/checkout.scss
 
-1: /home/cs/work/iorad/assets/styles/pages/pricing.scss
+1: /home/cs/work/iorad/assets/styles/pages/checkout.scss
 
 Backtrace:
-/home/cs/work/iorad/assets/styles/pages/pricing.scss:5:in `all-plans'
-/home/cs/work/iorad/assets/styles/pages/pricing.scss:5
+/home/cs/work/iorad/assets/styles/pages/checkout.scss:4:in `checkout'
+/home/cs/work/iorad/assets/styles/pages/checkout.scss:4
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -112,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'all-plans'.\A         on line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss, in `all-plans'\A         from line 5 of /home/cs/work/iorad/assets/styles/pages/pricing.scss\A \A 1: /home/cs/work/iorad/assets/styles/pages/pricing.scss"; }
+  content: "Syntax error: Undefined mixin 'checkout'.\A         on line 4 of /home/cs/work/iorad/assets/styles/pages/checkout.scss, in `checkout'\A         from line 4 of /home/cs/work/iorad/assets/styles/pages/checkout.scss\A \A 1: /home/cs/work/iorad/assets/styles/pages/checkout.scss"; }

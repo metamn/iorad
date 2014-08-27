@@ -15,8 +15,7 @@
     }
     
     border: 1px solid $lightblue;
-    @include primary-plan($lightblue);
-    
+    @include primary-plan($lightblue);   
   }
 }
 

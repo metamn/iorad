@@ -1,24 +1,11 @@
+
 <div class="features">
   <ul>
-    {% for feature in plan.features %}
-      {% if feature.description %}
-        {% assign klass = 'with-description' %}
-      {% else %}
-        {% assign klass = 'no-description' %}
-      {% endif %}
-      
-      <li>
-        <span class="feature {{ class }} {% include atoms/classname.html title=klass %}">
-          {{ feature.title }}
-        </span>
-        
-        {% if feature.description %}
-          <span class="feature-description">
-            {{ feature.description }}
-            <span class="close">close</span>
-          </span>
-        {% endif %}
-      </li>
-    {% endfor %}
+    {% if include.checkout %}
+      {% include molecules/feature-list.html features=plan.features %}
+      {% include molecules/feature-list.html features=site.data.pricing.all-plans class="strikethrough" %}
+    {% else %}
+      {% include molecules/feature-list.html features=plan.features %}
+    {% endif %}
   </ul>
 </div>

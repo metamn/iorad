@@ -1,25 +1,9 @@
-html.pricing {
+html.the-premium-private-plans {
   body {
     #pricing {
-      #title {
-        @include title;
-      }
-      
       #all-plans {
         @include all-plans;
       }
-      
-      #primary-plans {
-        @include primary-plans;
-      }
-      
-      #secondary-plans {
-        @include secondary-plans;
-      }
-    }
-    
-    #faq {
-      @include faqs;
     }
   }
 }

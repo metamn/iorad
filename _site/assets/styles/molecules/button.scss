@@ -21,4 +21,12 @@
       }
     }
   }
+  
+  &.checkout {
+    p {
+      border-color: $green;
+      background-color: $green;
+      color: $darkblue;
+    }
+  }
 }

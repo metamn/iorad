@@ -1,11 +1,19 @@
 {% assign button = plan.button[0] %}
 
-<div class="button {% include atoms/classname.html title=button.class %}">
+{% if include.checkout %}
+  {% assign class = 'checkout' %}
+  {% assign title = 'Checkout' %}
+{% else %}
+  {% assign class = button.class %}
+  {% assign title = button.title %}
+{% endif %}
+
+<div class="button {% include atoms/classname.html title=class %}">
   <p>
     {% if button.class == 'active' %}
-      {% include atoms/text-with-icon.html icon="icon-checkmark-green" text=button.title %}
+      {% include atoms/text-with-icon.html icon="icon-checkmark-green" text=title %}
     {% else %}
-      {{ button.title }}
+      {{ title }}
     {% endif %}
   </p>
 </div>
