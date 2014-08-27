@@ -1,5 +1,11 @@
-<div class="button">
+{% assign button = plan.button[0] %}
+
+<div class="button {% include atoms/classname.html title=button.class %}">
   <p>
-    {{ plan.button }}
+    {% if button.class == 'active' %}
+      {% include atoms/text-with-icon.html icon="icon-checkmark-green" text=button.title %}
+    {% else %}
+      {{ button.title }}
+    {% endif %}
   </p>
 </div>

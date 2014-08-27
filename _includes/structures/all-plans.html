@@ -8,8 +8,12 @@
     
     <ul>
       {% for plan in page.all-plans %}
-        <li>
+        <li class="feature with-description">
           {% include atoms/text-with-icon.html icon="icon-checkmark-green" text=plan.title %}
+          <span class="feature-description">
+            {{ plan.description }}
+            <span class="close">close</span>
+          </span>
         </li>
       {% endfor %}
     </ul>

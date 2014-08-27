@@ -4,7 +4,7 @@
   <div class="users">
     <div class="selectbox">
       <select>
-        {% for i in (1..select.max) %}
+        {% for i in (select.min..select.max) %}
           <option value="{{ i }}">{{ i }} {{ select.text }}</option>
         {% endfor %}
       </select>

@@ -1,0 +1,7 @@
+@mixin secondary-subtitle {
+  margin-top: $gutter * 2;
+  
+  p {
+    @include font(secondary-subtitle);  
+  }
+}

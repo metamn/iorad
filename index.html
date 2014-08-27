@@ -1,68 +1,80 @@
 ---
 layout: default
 title: Pricing
-subtitle: Ready to hand over cold hard cash for some more iorad? Sweet!
+subtitle: No obligations. Cancel, upgrade, downgrade anytime
 all-plans:
   - title: Unlimited private tutorials
-  - title: Export to docx / pptx right before that dreadful meeting
-  - title: Handy dandy data masker to hide sensitive info on screenshots
-  - title: Pure awesomeness
+    description: <p>LAUNCH SPECIAL – Expires October 10th, 2014</p>We are rewarding our first users with unlimited private tutorials. After the expiration date we’ll put some caps on the number of tutorials for each plan.
+  - title: Export to Word / Powerpoint
+    description: If you like an ole’ school step-by-step word doc or need a quick system walkthrough presentation for that project meeting… we got you covered!
+  - title: Data Masker Tool
+    description: Quickly edit screenshots to hide any sensitive information (Account Numbers, Contact info, etc)
 plans:
-  - title: Individual/Tiny Team
-    subtitle: Up to 4 Users
-    select: 
-      - max: 4
-        text: users
+  - title: Individual
+    subtitle: 1 user
     price: 
       - usd: 32
         text: month
     billed: Billed annually or $40 month-to-month
-    button: Upgrade
+    button: 
+      - title: Upgrade
     features:
       - title: 1 Custom Theme
-        description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
+        description: You can brand the player with your own logo and skin. Each user gets their own theme so they can style their own player.
   - title: Team
-    subtitle: Up to 17 Users
+    subtitle: 2-19 users
+    secondary-subtitle: multi-user discount&mdash;10% off the total
     select: 
-      - max: 17
+      - max: 19
+        min: 2
         text: users
     price: 
       - usd: 128
         text: month
     features:
-      - title: 5 Custom Themes
-        description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
+      - title: 2 Custom Themes
+        description: You can brand the player with your own logo and skin. Each user gets their own theme so they can style their own player.
     billed: Billed annually or $160 month-to-month
-    button: Upgrade 
+    button: 
+      - title: Upgrade 
     class: popular
   - title: Enterprise
-    subtitle: 20+ Users
-    instead-of-price: Contact us
+    subtitle: 20+ users
+    secondary-subtitle: for corporations, organizations and government
     features:
       - title: Unlimited Custom Themes
-        description: You can brand the player with your own logo(s) and skin(s). Official Rock start status! Each user gets a theme of their very own
+        description: You can brand the player with your own logo and skin. Each user gets their own theme so they can style their own player.
       - title: Host on your own server
-        description: Download a html zip of your tutorial and host it on Sharepoint or your own server
-    button: Contact Us
+        description: Download a html zip package of your tutorial and host it on your sharepoint or web server
+      - title: Custom Domain
+        description: Description text needed here
+    button: 
+      - title: Contact Us
+free-plan:
+  - title: The Free Plan
+    subtitle: Unlimited Public Tutorials
+    secondary-subtitle: a short text here makes this height longer to fit the other plan
+    features:
+      - title: No privacy and custom logos 
+      - title: Just sharing my knowledge
+    button: 
+      - title: Subscribed
+        class: active
 one-timer-plan:
   - subtitle: Not interested in monthly plans?
     select: 
       - max: 4
+        min: 1
         text: tutorials
     price: 
       - usd: 18
         text: tutorial
     features:
       - title: Pay by the tutorial
-      - title: Includes private sharing and the handy data masker. Custom Theme, docx/pptx (strikethrough effect to show not included)
-      - title: A handy dandy data masker enables you to hide sensitive info on screenshots
-    button: One Timer Plan
-free-plan:
-  - title: The Free Plan
-    subtitle: Unlimited Public Tutorials
-    features:
-      - title: Privacy and logos mean nothing. I just want to share my knowledge
-    button: Subscribed
+      - title: Data Masker Tool
+        description: Quickly edit screenshots to hide any sensitive information (Account Numbers, Contact info, etc)
+    button: 
+      - title: One Timer Plan
 faqs:
   - title: Example question?
     answer: Example answer. 

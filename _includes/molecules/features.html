@@ -2,19 +2,20 @@
   <ul>
     {% for feature in plan.features %}
       {% if feature.description %}
-        {% assign class = 'with-description' %}
+        {% assign klass = 'with-description' %}
       {% else %}
-        {% assign class = 'no-description' %}
+        {% assign klass = 'no-description' %}
       {% endif %}
       
       <li>
-        <span class="feature {{ class }}">
+        <span class="feature {{ class }} {% include atoms/classname.html title=klass %}">
           {{ feature.title }}
         </span>
         
         {% if feature.description %}
           <span class="feature-description">
             {{ feature.description }}
+            <span class="close">close</span>
           </span>
         {% endif %}
       </li>

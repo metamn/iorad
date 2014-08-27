@@ -11,6 +11,10 @@
     }
   }
   
+  .secondary-subtitle {
+    @include secondary-subtitle;
+  }
+  
   .users {
     @include users($border);
   }
@@ -21,24 +25,14 @@
   }
   
 
-  .instead-of-price {
-    margin-top: $gutter;
-    
-    p {
-      @include button;
-      @include colors($scheme);
-      font-size: 100%;
-      border: none;
-    }
-  }
-  
-
   .features {
     @include features($border);
   }
   
   
   .billed {
+    @include block;
+    
     margin-top: $gutter;
     p {
       @include font(subtitle);
@@ -47,11 +41,10 @@
   
   
   .button {
-    margin-top: $gutter;
+    @include block;
     
-    p {
-      @include button;
-    }
+    margin-top: $gutter;
+    @include iorad-button;
   }
   
   
@@ -60,8 +53,28 @@
   }
   
   
-  // Billing is missing, so we make all plans equal height on desktops
+  
+  &#individual {
+    .price {
+      @include block;
+      margin-top: $gutter * 2;
+    }
+    
+  }
+  
+  
   &#enterprise {
-    @include enterprise;
+    .button {
+      margin-top: $gutter * 2 - $gutter / 2;
+    }
+  }
+  
+  &#free-plan {
+    .secondary-subtitle {
+      p {
+        max-width: $text-width / 2;
+        margin: auto;
+      }
+    }
   }
 }
