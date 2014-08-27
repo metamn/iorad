@@ -28,6 +28,10 @@
         &.feature-description {
           display: none;
         }
+        
+        &.feature.not-included {
+          text-decoration: line-through;
+        }
       }
     }
   }
