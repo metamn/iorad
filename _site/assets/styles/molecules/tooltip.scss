@@ -1,12 +1,17 @@
 @mixin tooltip {
   cursor: help;
+  position: relative;
   
   .feature-description {
     text-align: center;
     @include colors(white-on-lightblue);
     
     padding: $gutter;
-    max-width: calc(18em - #{$gutter * 2});
+    width: calc(18em - #{$gutter * 2});
+    
+    @include portrait {
+      left: calc((100% - 18em) / 2);
+    }
     
     position: absolute;
     z-index: 100;
