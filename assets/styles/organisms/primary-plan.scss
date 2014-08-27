@@ -52,6 +52,8 @@
     @include most-popular;
   }
   
+  
+  
   &#individual {
     .price {
       @include block;
@@ -64,6 +66,15 @@
   &#enterprise {
     .button {
       margin-top: $gutter * 2 - $gutter / 2;
+    }
+  }
+  
+  &#free-plan {
+    .secondary-subtitle {
+      p {
+        max-width: $text-width / 2;
+        margin: auto;
+      }
     }
   }
 }
