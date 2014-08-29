@@ -37,5 +37,10 @@
       color: transparent;
       text-shadow: 0 0 0 $white;
     }
+    
+    // For Google Chrome
+    option {
+      @include colors;
+    }
   }
 }
