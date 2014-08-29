@@ -10,15 +10,15 @@
     clear: none;
 
     /* Left padding makes room for image */
-    padding: 5px 0 4px 24px;
+    padding: 0px 0 4px 28px;
 
     /* Make look clickable because they are */
     cursor: pointer;
 
-    //background: url(http://metamn.github.io/iorad/assets/images/icon-checkmark-green.png) left center no-repeat;
+    background: url(http://metamn.github.io/iorad/assets/images/icon-checkbox-green-unchecked-small.png) left center no-repeat;
   }
   
   &:checked + label {
-    background: url(http://metamn.github.io/iorad/assets/images/icon-checkmark-green.png) left center no-repeat;
+    background: url(http://metamn.github.io/iorad/assets/images/icon-checkbox-green-checked-small.png) left center no-repeat;
   }
 }
