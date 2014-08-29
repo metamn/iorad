@@ -59,6 +59,11 @@ $heading-level-8: 6.8462em;
     font-weight: 400;
     font-size: smaller;
     @include uppercase;
+  
+  } @elseif ($type == terms-and-conditions) {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: smaller;
   }
 }
 
