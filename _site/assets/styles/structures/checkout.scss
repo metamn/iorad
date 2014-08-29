@@ -80,6 +80,7 @@
     
     // All plans will be centered also on desktops
     // - this is the new code
+    /*
     @include landscape {
       article {
         $width: 31.5%;
@@ -91,6 +92,19 @@
           $border: 1px;
           margin-left: calc((100% - #{$width} - #{$border * 2}) / 2);
         }
+      }
+    }
+    */
+
+    @include landscape {
+      article {
+        @include margin($padding: 20%);
+      }
+    }
+    
+    @include large-screen-and-up {
+      article {
+        @include margin($padding: 35%);
       }
     }
   }

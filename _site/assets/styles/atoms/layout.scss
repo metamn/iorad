@@ -34,6 +34,13 @@
 }
 
 
+@mixin margin($width: 100%, $padding: $gutter, $border: 0px) {
+  margin-left: $padding;
+  margin-right: $padding;
+  width: calc(#{$width} - #{$padding * 2} - #{$border * 2});
+}
+
+
 
 
 @mixin fixed-width-grid($size, $gutter) {
