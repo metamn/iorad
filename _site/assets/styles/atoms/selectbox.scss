@@ -1,0 +1,41 @@
+// https://coderwall.com/p/w7npmq
+// - better version: http://codepen.io/aubricus/pen/zCiyJ
+@mixin selectbox {
+  border: 1px solid $lightblue;
+
+  width: 70%;
+  margin: 0 15%;
+  padding: 0;
+  @include colors;
+
+  overflow: hidden;
+  
+  background: $darkblue url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green.png") no-repeat 99% 50%;
+  @include portrait {
+    background: $darkblue url("http://metamn.github.io/iorad/assets/images/icon-arrow-down-green-medium.png") no-repeat 99% 50%;
+  }
+
+
+  select {
+    @include colors;
+    @include font;
+    font-size: 100%;
+
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    @include appearance(none);
+    
+    &:focus {
+      outline: none;
+    }
+    
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 $white;
+    }
+  }
+}
