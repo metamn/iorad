@@ -52,6 +52,9 @@
     @include most-popular;
   }
   
+  .terms {
+    @include terms;
+  }
   
   
   &#individual {

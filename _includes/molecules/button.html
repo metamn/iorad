@@ -17,3 +17,12 @@
     {% endif %}
   </p>
 </div>
+
+{% if include.checkout %}
+<div class="terms">
+  <p>
+    <input type="checkbox" name="terms" id="terms" checked>
+    <label for="terms">I Accept iorad's Terms and Conditions</label>
+  </p>
+</div>
+{% endif %}

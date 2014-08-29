@@ -45,12 +45,16 @@
 @mixin reset-plan-margins {
   #primary-plans, #secondary-plans {
     margin-top: 0;
-    
+
     article {
       margin-bottom: $gutter * 3;
-      
+
+      &:first-of-type {
+        margin-top: $gutter * 2;
+      }
+
       &.popular {
-        margin-bottom: $gutter * 2;
+        margin-bottom: 0;
       }
     }
   }

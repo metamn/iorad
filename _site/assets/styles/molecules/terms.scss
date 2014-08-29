@@ -1,0 +1,12 @@
+@mixin terms {
+  @include block;
+  margin-top: $gutter;
+  
+  p {
+    @include font(terms-and-conditions);
+    
+    input[type='checkbox'] {
+      @include checkbox;
+    }
+  }
+}
